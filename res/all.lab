@@ -1,0 +1,499 @@
+13516130_001 hari ini kita akan belajar tentang sentimen analisis
+13516130_002 kenapa sih kita perlu belajar sentimen analisis
+13516130_003 sentimen analisis ini dilakukan untuk memahami opini orang terhadap sesuatu baik itu orang lain baik itu sebuah perusahaan baik itu produk pemerintah dan lain-lain
+13516130_004 dengan adanya sentimen analisis kita tidak perlu lagi untuk melakukan survey terhadap opini orang akan produk kita dan ini akan mengurangi pengeluaran kita
+13516130_005 tipe opini terdiri dari dua macam
+13516130_006 yang pertama adalah opini regular atau opini yang di dalamnya hanya menilai satu objek saja
+13516130_007 nah di sini ada dua jenis ada opini yang sentimennya dinyatakan secara eksplisit ada juga yang dinyatakan secara implisit
+13516130_008 tipe opini yang kedua adalah tipe opini komparatif atau perbandingan
+13516130_009 nah di dalam opini ini objek yang dibandingkan itu adalah berjumlah dua atau lebih
+13516130_010 contohnya rasa dari pepsi lebih enak dari coca-cola
+13516130_011 nah dari opini tersebut kan bisa dilihat kan kalo misalnya objek yang dibandingkan itu ada dua yaitu pepsi dan coca-cola
+13516130_012 opini bisa didefinisikan menjadi empat variabel
+13516130_013 yang pertama adalah variabel g atau target
+13516130_014 target yang dimaksud adalah objek yang akan dinilai sentimennya
+13516130_015 yang kedua yaitu s atau sentimen
+13516130_016 jadi ini merupakan nilai sentimen tersebut apakah positif negatif atau netral
+13516130_017 yang ketiga adalah h atau pemegang opini yaitu siapa orang yang menyatakan opini tersebut dan yang keempat adalah t yaitu time yaitu kapan sih opini itu dibuat karena data dari waktu ini tuh sangat penting untuk melihat perubahan opini seiring berjalannya waktu
+13516130_018 seharusnya dalam sebuah produk itu semakin hari produknya semakin baik sehingga opininya seharusnya semakin baik juga
+13516130_019 dalam melakukan analisis sentimen dibagi menjadi beberapa level
+13516130_020 yang pertama itu adalah dokumen level
+13516130_021 dokumen level ini intinya proses ini menilai suatu dokumen itu sentimennya negatif atau positif
+13516130_022 jadi diasumsikan dokumen tersebut hanya memiliki satu jenis sentimen
+13516130_023 yang kedua adalah sentence level atau level kalimat
+13516130_024 di sini analisis dilakukan terhadap tiap kalimat
+13516130_025 jadi nanti hasilnya adalah sentimen dari tiap kalimat tersebut
+13516130_026 yang terakhir ada aspect based analisis
+13516130_027 jadi analisis dilakukan berdasarkan aspek
+13516130_028 contohnya adalah kualitas telefon samsung baik tetapi kualitas baterainya buruk karena dia gampang mati
+13516130_029 nah di sini kan terlihat bahwa dia menilai dua aspek yaitu kualitas telefon dan kualitas baterai
+13516130_030 nanti hasil sentimennya adalah berdasarkan kedua aspek tersebut
+13516130_031 daftar kata sentimen bisa diberikan secara manual bisa melalui kamus bisa melalui korpus dan juga bisa melalui sentiwordnet
+13516130_032 dalam melakukan sentimen analisis ada beberapa tahap yang perlu dilakukan
+13516130_033 yang pertama kita harus menentukan apakah sebuah kalimat itu opini atau bukan karena mungkin aja kan ada kalimat yang bukan merupakan opini
+13516130_034 contohnya os samsung baru sudah rilis
+13516130_035 nah disini kan hanya menyatakan informasi dia tidak menyatakan opini
+13516130_036 tetapi kalo misalnya dia menyatakan bahwa os samsung baru tampilannya enak itu kan opini
+13516130_037 nah kita harus menentukan mana yang opini mana yang bukan
+13516130_038 kalimat yang merupakan opini setelah itu ditentukan polaritasnya apakah positif negatif atau netral
+13516130_039 setelah ditentukan polaritasnya kita harus menentukan kekuatan dari polaritas tersebut
+13516130_040 apakah sangat positif apakah sangat negatif atau positif saja dan seterusnya
+13516130_041 yang terakhir adalah tingkat yang paling tinggi yaitu kita harus bisa mengambil atribut dari objek serta nilai atribut tersebut
+13516130_042 contohnya kita harus bisa mengambil bahwa objek yang dinilai adalah samsung dan atributnya adalah tampilannya enak misalnya seperti itu
+13516130_043 nah fitur-fitur dasar dari sentimen analisis yang pertama adalah term dan bobotnya
+13516130_044 disini bisa diambil dari tf atau tf idf
+13516130_045 yang kedua jenis kata juga bisa menjadi fitur dasar
+13516130_046 selanjutnya daftar kata sentimen
+13516130_047 selanjutnya informasi sintaksis sentimen shifter dan rules of opinion
+13516130_048 nah terdapat beberapa permasalahan nih tapi dari sentimen analisis
+13516130_049 yang pertama itu adalah ner atau named entity recognition
+13516130_050 kita harus tau kan mana yang menjadi entitas
+13516130_051 contohnya itu kalo sulit adalah jika satu entitas lebih dari dua kata
+13516130_052 misalnya barack obama berhasil mengurangi titik titik titik
+13516130_053 nah barack obama ini kan adalah suatu entitas tetapi terdiri dari dua kata
+13516130_054 nah selain itu yang menjadi permasalahan adalah ironi atau sarkastik
+13516130_055 nah disini tuh banyak banget orang yang biasanya menyampaikan opini secara sarkastik
+13516130_056 salah satu contohnya adalah kalimat berikut
+13516130_057 pemerintah makin hebat saja ngambil mentri dari partai yang terkenal korupsi
+13516130_058 nah disini kan dia mengatakan bahwa pemerintah hebat kan
+13516130_059 padahal nyatanya dari partai yang terkenal korupsi itu adalah sesuatu yang buruk jadi ini merupakan kalimat sarkastik
+13516130_060 selanjutnya permasalahannya adalah jika menggunakan bahasa non formal
+13516130_061 banyak orang yang memberikan opini itu menggunakan bahasa sehari-hari atau bahkan ada juga yang menggunakan bahasa daerah
+13516130_062 nah ini merupakan kesulitan karena biasanya dalam sentimen analisis itu bahasa yang digunakan bahasa formal kalo berasal dari korpus dari kamus dan semacamnya
+13516130_063 selain itu kemasalahannya itu adalah tiap sentimen itu sangat bergantung terhadap konteks dan sangat bergantung terhadap domainnya
+13516130_064 contohnya nih misalnya ada kalimat baca bukunya aja
+13516130_065 nah ini adalah sebuah sentimen yang positif jika ini adalah review dari sebuah buku
+13516130_066 berarti seseorang menganjurkan orang lain untuk membaca buku tersebut
+13516130_067 berarti buku itu memiliki nilai yang bagus
+13516130_068 nah tetapi kalimat baca bukunya saja akan menjadi sentimen yang negatif jika domainnya adalah domain film
+13516130_069 jadi filmnya itu sangat buruk sehingga orang-orang menyuruh mereka membaca bukunya saja
+13516130_070 jadi sentimen analisis ini sangat dipengaruhi oleh domain
+13516130_071 selanjutnya jika tadi opini itu dapat didefinisikan oleh empat variabel berbeda dengan aspect based opini dimana aspect based opini didefinisikan oleh enam variabel
+13516130_072 yang pertama itu adalah variabel e atau entitas
+13516130_073 jadi kita harus mendefinisikan apa entitas dari opini tersebut
+13516130_074 yang kedua itu adalah aspek
+13516130_075 jadi entitas tersebut aspeknya apa
+13516130_076 yang ketiga itu adalah s yaitu nilai sentimennya
+13516130_077 lalu yang keempat adalah h yaitu pemegang opini dan yang terakhir adalah t yaitu waktu
+13516130_078 secara umum arsitektur dari sentimen analisis yang pertama adalah input
+13516130_079 sudah jelas bahwa kita harus menerima input baik itu dokumen ataupun kalimat
+13516130_080 setelah itu dari input kita melakukan ekstraksi fitur
+13516130_081 jadi kita mengambil fitur-fitur apa saja yang bisa diambil dari input tersebut
+13516130_082 nah untuk melakukan ekstraksi fitur kita bisa mendapat masukan dari kamus atau korpus dan semacamnya untuk membantu kita melakukan ekstraksi fitur
+13516130_083 setelah fitur sudah diekstraksi maka keluaran dari ekstraksi fitur akan diklasifikasi sentimennya
+13516130_084 nah klasifikasi sentimen ini bisa menggunakan model atau aturan
+13516130_085 nanti setelah dilakukan klasifikasi sentimen maka kita akan mendapatkan keluaran nilai sentimen tersebut apakah nilainya positif apakah nilainya negatif atau netral
+13516130_086 yang harus diperhatikan adalah bahwa dalam ekstraksi fitur akan ada perhitungan terhadap kata negasi
+13516130_087 nah hal ini dapat dilakukan menggunakan word window atau informasi sintaksis
+13516130_088 lalu dari sumber-sumber tersebut bisa ada pengetahuan berupa atribut dari sebuah objek dan nilai-nilai yang mungkin pada atribut tersebut
+13516130_089 contoh-contoh fitur dari sentimen analisis itu untuk unigram itu bisa menggunakan bag of words jadi kumpulan-kumpulan kata yang tidak perlu berurutan
+13516130_090 selain itu bisa juga bigram jadi kumpulan dua kata
+13516130_091 contohnya kalo untuk unigram adalah pemerintah koma makin koma hebat koma ambil dan seterusnya untuk bigram itu kumpulan dua kata yaitu pemerintah makin koma makin hebat koma hebat ambil koma ambil mentri dan seterusnya
+13516130_092 lalu bisa juga digunakan daftar kata
+13516130_093 nah terakhir ini kita akan membahas summarization opini atau kesimpulan dari opini
+13516130_094 jadi yang pertama kita akan melakukan feature identification sama seperti arsitektur umum sentimen analisis
+13516130_095 jadi kita misalnya menghasilkan aspek kualitas baterai aspek kualitas suara aspek kemudahan penggunaan dan semacamnya
+13516130_096 lalu yang kedua kita melakukan prediksi dari sentimen tersebut
+13516130_097 jadi apakah aspek kualitas baterai itu bagus apakah aspek kualitas suara itu bagus dan semacamnya
+13516130_098 setelah itu kita menyimpulkan untuk tiap aspek
+13516130_099 misalnya aspek baterai itu bagus dan aspek kualitas itu lebih bagus seperti itu
+13516130_100 sekian untuk materi sentimen analisis hari ini
+13516133_001 selamat pagi teman-teman
+13516133_002 untuk minggu ini kita akan mempelajari image enhancement
+13516133_003 nah pertama apa itu image enhancement
+13516133_004 image enhancement adalah perbaikan kualitas citra
+13516133_005 tujuannya adalah untuk memperoleh citra yang lebih sesuai digunakan untuk aplikasi lebih lanjut
+13516133_006 contohnya kita ingin mengenali objek di dalam citra
+13516133_007 image enhancement adalah satu proses awal dalam pengolahan citra
+13516133_008 mengapa kita memerlukan image enhancement
+13516133_009 misalnya citra yang kita dapat mengandung derau atau terlalu terang atau gelap atau mengalami blurring
+13516133_010 kalau kita lihat pada ketiga gambar ini gambar yang pertama mengalami noise karena sangat banyak titik-titik putih yang tersebar pada gambar ini
+13516133_011 nah pada gambar kedua bisa kita lihat kontras dari citra ini terlalu gelap
+13516133_012 kemudian pada gambar ketiga adanya motion blurring yang biasa terjadi pada saat kita mengambil gambar dengan kamera
+13516133_013 berdasarkan ranah atau domain operasinya metode-metode untuk perbaikan kualitas citra dapat dikelompokkan menjadi dua kategori berikut
+13516133_014 yang pertama adalah image enhancement dalam ranah spasial yang kedua adalah dalam ranah frekuensi
+13516133_015 metode-metode image enhancement dalam ranah spasial dilakukan dengan <man> memanipulasi secara langsung pixel-pixel di dalam citra
+13516133_016 sedangkan untuk dalam ranah frekuensi image tersebut diubah ke ranah frekuensi baru kemudian dimanipulasi nilai-nilai frekuensi tersebut lalu diubah kembali ke dalam ranah spasial
+13516133_017 masing-masing ranah operasi ini digunakan untuk tujuan yang spesifik karena tidak semua perbaikan citra dapat dilakukan dalam ranah spasial
+13516133_018 nah untuk materi minggu ini kita hanya akan membahas metode image enhancement dalam ranah spasial
+13516133_019 nah misalkan terdapat suatu fungsi x atau x dan y yang merupakan nilai citra input dan ada fungsi g x dan y yang merupakan nilai citra output dan t adalah operator terhadap f
+13516133_020 metode <pe> pemrosesan citra dalam ranah spasial dinyatakan sebagai g x y sama dengan t f x y
+13516133_021 t bisa beroperasi pada satu pixel sekelompok pixel yang bertetangga ataupun keseluruhan pixel di dalam citra
+13516133_022 jadi metode dalam ranah spasial dapat dilakukan pada aras atau level titik aras lokal dan aras global
+13516133_023 nah ini adalah jenis-jenis image enhancement yang akan kita pelajari
+13516133_024 nah proses proses yang termasuk ke dalam perbaikan kualitas citra
+13516133_025 contohnya adalah pengubahan kecerahan gambar atau image brightening citra negatif atau image negative peregangan kontras atau contrast stretching pengubahan histogram citra pelembutan citra atau image smoothing penajaman sharpening pewarnaan semu atau pseudocolouring pengubahan geometrik dan lain-lain
+13516133_026 nah untuk pemrosesan dalam aras titik t hanya beroperasi pada satu pixel
+13516133_027 t adalah fungsi transformasi nilai grayscale sehingga ditulis s sama dengan t r dengan s adalah variabel yang menyatakan nilai grayscale g x y dan r adalah variabel yang menyatakan nilai grayscale f x y
+13516133_028 contoh-contoh image enhancement dalam aras titik adalah mencerahkan citra menegatifkan citra peregangan kontras gamma correction dan lain-lain
+13516133_029 nah untuk pencerahan citra kecerahan citra dapat diperbaiki dengan menambahkan atau mengurangkan sebuah konstanta kepada atau dari setiap pixel atau mengalikan sebuah konstanta ke setiap pixel
+13516133_030 <ee> rumusnya menjadi r sama dengan s tambah b
+13516133_031 jika b positif kecerahan citra akan bertambah
+13516133_032 sementara jika b negatif kecerahan citra akan berkurang
+13516133_033 nah kita memerlukan operasi clipping jika nilai r ditambah b berada di bawah nilai intensitas minimum atau di atas nilai intensitas maksimum
+13516133_034 nah <un> contohnya untuk pixel dengan ukuran delapan bit jika r ditambah b nilainya di atas dua ratus lima puluh lima maka nilai s sama dengan dua lima lima
+13516133_035 sedangkan jika r ditambah b kecil dari nol maka s sama dengan nol
+13516133_036 sekarang lihat kedua gambar ini
+13516133_037 di gambar yang kiri citra zelda ini agak gelap
+13516133_038 nah kalau kita tambahkan nilai b sama dengan seratus ke dalam citra tersebut maka hasilnya adalah citra zelda di kanan yang lebih terang
+13516133_039 nah operasi pencerahan yang lain bisa menggunakan rumus r sama dengan a s ditambah b dengan a dan b adalah konstanta
+13516133_040 nah yang kedua adalah menegatifkan citra
+13516133_041 nah negatif citra ini mirip seperti film negatif pada fotografi
+13516133_042 jadi <nem> pada gambar ini nilai yang berwarna hitam menjadi putih dan pixel yang berwarna putih menjadi hitam
+13516133_043 misalnya suatu citra memiliki l derajat keabuan
+13516133_044 nah cara untuk menegatifkan citra ini adalah kita mengurangi nilai intensitas pixel dari nilai keabuan maksimum l kurang satu sehingga rumusnya adalah s sama dengan l dikurang satu dikurang r
+13516133_045 contohnya pada citra grayscale delapan bit rumusnya menjadi s sama dengan dua lima lima dikurang r
+13516133_046 proses ini bermanfaat bila area hitam sangat dominan di dalam citra misalnya foto sinar x dan citra mammografi
+13516133_047 kemudian ada yang namanya perbaikan kontras
+13516133_048 nah bagaimana perbaikan kontras itu dilakukan
+13516133_049 jadi nilai-nilai pixel lebih kecil dari m dibuat lebih gelap sedangkan nilai-nilai pixel yang lebih besar sama dengan m dibuat lebih terang
+13516133_050 operasi ini disebut sebagai peregangan kontras atau contrast stretching
+13516133_051 nah ada satu lagi operasi contrast stretching
+13516133_052 jadi jika nilai-nilai pixel yang lebih kecil dari m dibuat menjadi hitam dan nilai-nilai pixel yang lebih besar sama dengan m dibuat menjadi putih maka operasi ini disebut operasi pengambangan atau thresholding
+13516133_053 contohnya bisa dilihat pada ketiga gambar kakaktua ini
+13516133_054 ini adalah citra awalnya kemudian dilakukan <pe> peregangan kontras jadi kita masih bisa nampak nilai abu-abunya dan di gambar sebelahnya lagi dilakukan operasi pengambangan jadi nilai-nilai pixel ini hanya be hanya bernilai nol atau dua lima lima
+13516133_055 kemudian ada gray level slicing
+13516133_056 tujuannya adalah untuk menonjolkan atau highlight rentang keabuan tertentu di dalam citra
+13516133_057 contohnya adalah menonjolkan gumpalan air yang ada pada citra satelit atau menonjolkan cacat yang ada pada citra sinar x
+13516133_058 dua pendekatan yang dilakukan dalam gray level slicing ini adalah yang pertama menampilkan lebih terang semua gray level di dalam rentang yang ingin ditonjolkan dan menampilkan lebih gelap semua gray level lainnya
+13516133_059 ini disebut sebagai discard background
+13516133_060 yang kedua adalah menampilkan lebih terang semua gray level di dalam rentang yang ingin ditonjolkan sembari tetap mempertahankan gray level lainnya
+13516133_061 metode ini disebut sebagai preserve background
+13516133_062 kemudian ada bit plane slicing
+13516133_063 tujuannya adalah menonjolkan kontribusi dari bit tentu di dalam citra
+13516133_064 misalkan satu pixel terdiri dari delapan bit
+13516133_065 bit-bit tersebut tersusun dari kiri ke kanan dalam urutan yang kurang berarti hingga bit-bit yang berarti
+13516133_066 susunan bit pada setiap byte menjadi b tujuh b enam b lima b empat b tiga b dua b satu dan b nol
+13516133_067 jika setiap bit dari setiap pixel diambil maka akan diperoleh delapan buah bidang atau bit plane
+13516133_068 nah untuk minggu ini sekian dulu
+13516133_069 <ee> saya akan kasih tugas yaitu buatlah program image enhancement yang mengaplikasikan metode-metode ini yaitu image brightening contrast stretching transformasi log dan inverse log nanti akan saya ajarkan transformasi pangkat akan saya ajarkan juga gray level slicing dan bit plane slicing
+13516133_070 selamat siang
+13516134_001 halo selamat pagi semua
+13516134_002 jadi hari ini kita akan ngebahas aspek-aspek psikologis
+13516134_003 nah apa aja sih aspek-aspek psikologis
+13516134_004 jadi yang pertama ada atensi
+13516134_005 atensi itu merupakan faktor mutlak bagi sesuatu usaha persuasi
+13516134_006 nah langkah pertama dalam proses persuasi ini adalah atention arousing
+13516134_007 atensi sendiri punya tiga jenis atau bentuk
+13516134_008 yang pertama involuntir
+13516134_009 yang kedua nonvoluntir
+13516134_010 yang ketiga itu nonvoluntir
+13516134_011 nah sifat atensi sendiri ada dua
+13516134_012 yang pertama nonatentif
+13516134_013 yang kedua inatentif
+13516134_014 jadi nonatentif ini punya empat bentuk perhatian
+13516134_015 yang pertama perhatian yang sifatnya serba suka
+13516134_016 yang kedua pandangan masyarakat seseorang yang sifatnya tidak menyetujui atau tidak senang terhadap yang bersangkutan
+13516134_017 ketiga itu situasi di mana perhatian seseorang ditarik oleh objek stimulus lain
+13516134_018 yang keempat adalah perhatian yang menetap dari seseorang atau orang banyak terhadap objek stimulus tertentu sehingga tidak dapat atau sukar tertarik pada objek yang lain
+13516134_019 nah usaha-usaha untuk menumbuhkan perhatian itu bisa melalui pengaruh stimulus
+13516134_020 gimana caranya ya begini
+13516134_021 pertama objek yang berubah-ubah atau bergerak
+13516134_022 yang kedua intensitas objek itu
+13516134_023 yang ketiga pengulangan
+13516134_024 keempat bentuk objek
+13516134_025 yang kelima hal baru dan aneh
+13516134_026 yang terakhir itu hubungan sekoyong-koyong dengan objek itu
+13516134_027 nah di sini tuh kita perlu tahu kondisi komunikan yang dapat dipergunakan sebagai landasan menumbuhkan perhatian
+13516134_028 yang pertama itu familiritas dengan objek
+13516134_029 yang kedua kepentingan
+13516134_030 ketiga ada hubungan langsung
+13516134_031 keempat kondisi fisik dalam psikologis komunikan
+13516134_032 yang ke lima itu feeling
+13516134_033 dan yang terakhir itu kegiatan komunikan
+13516134_034 interest sendiri itu penting dalam atensi karena interest itu adalah rasa tertarik seseorang atau orang banyak terhadap suatu objek tertentu
+13516134_035 ada tiga unsur tersirat dalam pengertiannya
+13516134_036 yang pertama itu seseorang atau orang banyak yang punya rasa tertarik itu
+13516134_037 yang kedua objek yang menimbulkan rasa tertarik itu
+13516134_038 dan yang terakhir kualitas daya tarik objek tersebut
+13516134_039 oke selanjutnya itu proses penginderaan
+13516134_040 jadi tuh sensasi tuh dari mana sih <eee> dirasakan
+13516134_041 pertama itu kita perlu ada fenomena yang terjadi
+13516134_042 dari fenomena itu kita akan memproses melalui penginderaan atau bisa dibilang sensorik
+13516134_043 lalu proses penginderaan ini berkaitan dengan alat-alat indera
+13516134_044 nah kita tuh punya apa aja sih alat-alat indera
+13516134_045 itu kita ada telinga mata kinestesi dan orientansi hidung lidah dan kulit
+13516134_046 nah jadi kalau ada alurnya kita dapat stimulus
+13516134_047 stimulus ini dari luar misalnya objek
+13516134_048 kemudian stimulus ini memberikan kita sensasi
+13516134_049 kita merasakan sensasi ini melalui alat indera
+13516134_050 lalu dari sensasi itu kita membentuk persepsi atau permaknaan
+13516134_051 nah permaknaan ini <eee> bisa tergantung beberapa hal berikut
+13516134_052 misalnya hasrat harapan motivasi pengalaman ingatan pengetahuan atau mungkin ada faktor-faktor lain
+13516134_053 nah dari <e> persepsi itu kita kemudian bisa memberikan respon
+13516134_054 respon itu bisa bela seperti tindakan atau perilaku
+13516134_055 nah untuk proses penginderaan itu <ee> tergantung dari alat indera
+13516134_056 nah itu tuh tahap mendasar banget dari manusia
+13516134_057 dia tuh menerima stimuli kemudian mengembalikannya lagi kepada lingkungan
+13516134_058 jadi bisa dibilang sensasi itu adalah pengalaman elementer yang segera yang belum memerlukan pengurangan verbal atau simbolis atau konseptual dengan terutama sekali berhubungan dengan alat indera
+13516134_059 tapi dalam kehidupan nyata kita jarang hanya mengalami sensasi sederhana yang ditimbulkan stimuli yang melanda indera seperti warna terang nada aroma dan sebagainya
+13516134_060 persepsi itu bekerja memodifikasi atau mengintegrasikan sensasi sehingga kita memberikan arti atau makna terhadap apa yang kita alami
+13516134_061 nah alat indera sendiri merupakan saluran yang terdiri dari pertama reseptor
+13516134_062 reseptor itu adalah sel yang peka terhadap rangsangan
+13516134_063 kedua serabut saraf
+13516134_064 serabut saraf ini yang meneruskan impuls dari reseptor menuju otak atau sum-sum tulang belakang
+13516134_065 yang ketiga itu relay stations sebagai area proses dalam otak
+13516134_066 nah sensasi ini terjeda terjadi ketika saluran indera mengalami stimulasi
+13516134_067 nah reseptor-reseptor indera itu ada apa aja sih
+13516134_068 yang pertama ada eksteroseptor
+13516134_069 ini tuh reseptor yang menerima atau menangkap informasi dari luar tubuh atau biasa kita kenal sebagai panca indera
+13516134_070 yang kedua introseptor
+13516134_071 re itu reseptor yang mengolah informasi dalam tubuh seperti gerakan peristaltik usus pernafasan detak jantung atau tekanan darah
+13516134_072 yang ketiga ada proprioseptor
+13516134_073 ini tuh reseptor yang menangkap informasi orientasi dan gerakan tubuh atau kinestesi
+13516134_074 nah semua indera ini pasti punya sensitivas
+13516134_075 dia tuh tergantung terhadap intensitas itu diukur dengan ambang mutlak atau terhadap perubahan intensitas itu tuh diukur dengan perbedaan ambang
+13516134_076 nah untuk ambang absolutnya itu bisa kita hitung dengan jumlah energi minimal stimulus yang diperlukan untuk terjadinya deteksi
+13516134_077 jadi kalau misalnya mau kita ngebahas ini dari sisi biologis dan psikologis
+13516134_078 sensasi itu kalau dari sisi biologis adalah proses sensorik berkaitan dengan organ indera
+13516134_079 sedangkan kalau psikologis itu sensasi itu adalah pengalaman yang ditimbulkan stimuli sederhana
+13516134_080 nah untuk persepsi sendiri dari biologis kita bisa ngelihat itu tuh sebagai proses perseptual berkaitan dengan sistem saraf tingkat tinggi
+13516134_081 sedangkan dari sisi psikologis persepsi itu sebagai hasil integrasi atau modifikasi dari sensasi
+13516134_082 nah untuk penginderaan visual sendiri dalam desain komvis atau interior termasuk arsitektur indera mata atau visual menempati posisi yang paling vital karena sebagian besar karya-karya desain atau karya arsitektural merupakan objek yang memberi sensasi langsung pada mata
+13516134_083 kemudian pengalaman visual itu akan semakin bernilai ketika mendapatkan sensasi lain yang ditimbulkan dari misalnya tekstur bahan pelapis kursi desiran angin atau gemercik air di taman aroma wewangian bunga yang tercium dari jambangan sehingga membuat hati merasa makin nyaman dan senang
+13516134_084 lalu kenapa meng demikian gitu
+13516134_085 sistem ini sistem indera ini sekaligus memiliki kemampuan untuk saling bekerja sama atau berintegrasi
+13516134_086 hal ini dikenal sebagai istilah sinestesi atau di mana pengalaman atau fenomena sensasi dapat ditimbulkan atas hasil integrasi berbagai indera yang memberikan secara serempak atau stimulan
+13516134_087 nah untuk mekanisme kerja alat indera sendiri pertama itu dia ada energi fisik dalam dunia sekitar kita yang berubah menjadi aktivitas pada sistem saraf
+13516134_088 kemudian proses majuk suknya energi fisik ke dalam aktivitas sistem saraf disebut transduksi
+13516134_089 transduksi terjadi pada sel reseptor kemudian dikonversi dari energi
+13516136_001 ya selamat pagi semua jadi hari ini kita akan belajar satu lagi algoritma baru 
+13516136_002 nah jika sebelumnya kita sudah belajar apa itu algoritma kali ini kita belajar satu lagi jenis algoritma yaitu namanya algoritma greedy 
+13516136_003 nah ini kan ya sesuai dengan pelajaran kita if2211 strategi algoritma 
+13516136_004 nah disini teman-teman bisa lihat bahwa sebenarnya algoritma greedy itu adalah merupakan metode yang paling populer untuk memecahkan persoalan optimasi karena memang selain mudah dalam diaplikasikan ya algoritma greedy ini memang cepat dalam hal komputasi 
+13516136_005 nah cuman permasalahannya selalu di bagian optimasi dimana bagaimana caranya mencari solusi yang paling optimum 
+13516136_006 nah biasanya ada dua macam persoalan optimasi ini bagaimana memaksimasi dan bagaimana meminimasi 
+13516136_007 nah contoh persoalan optimasi yang dimaksud disini contohnya satu itu persoalan penukaran uang 
+13516136_008 misalnya diberikan uang senilai a tukar a dengan koin-koin uang yang ada berapa jumlah minimum koin yang diperlukan untuk penukaran tersebut 
+13516136_009 nah ini kan persoalan minimasi nih 
+13516136_010 nah ini cocok untuk <dila> dikerjakan diselesaikan dengan pendekatan algoritma greedy 
+13516136_011 nah contoh satunya ini <tsedia> banyak koinnya itu satu lima sepuluh dua lima 
+13516136_012 terus uangnya senilai tiga puluh dua 
+13516136_013 nah dapat ditukar banyak cara seperti ya misalnya tiga puluh dua koin satu atau tujuh koin lima <ek> tujuh koin yang empatnya itu koin lima satu koin sepuluh dua koin satu 
+13516136_014 bisa juga lima koin dengan tiga koin sepuluh dua koin satu dan paling minimum empat koin dua lima satu lima satu sama dua koin satu 
+13516136_015 nah contoh-contoh seperti inilah yang yang dapat dengan baik diselesaikan dengan <al> pendekatan algoritma greedy 
+13516136_016 nah sekarang kita belajar prinsipnya dulu 
+13516136_017 nah greedy itu sendiri artinya adalah rakus tamak loba 
+13516136_018 nah jadi sebenarnya prinsip dari algoritma greedy ini take what you can get now atau ambil yang bisa kamu dapatkan sekarang 
+13516136_019 nah algoritma greedy ini membentuk solusi langkah per langkah 
+13516136_020 di setiap langkahnya itu terdapat banyak pilihan yang perlu dievaluasi 
+13516136_021 oleh karena itu pada setiap langkah harus dibuat keputusan yang terbaik dalam menentukan pilihan 
+13516136_022 <nahm> di di disetiap langkah itu ketika kita membuat pilihan yang diambil sebenarnya adalah langkah yang optimum lokal yang mana yang dianggap paling baik pada detik itu juga 
+13516136_023 dengan harapan sebenarnya bahwa langkah tersebut mengarah ke solusi optimum global 
+13516136_024 walaupun ya di dalam algoritma greedy ini tidak ada jaminan 
+13516136_025 nah algoritma greedy dalam memecahkan masalah itu per langkah-langkahnya seperti ini kira-kira 
+13516136_026 <dis> <yak> pertama pada setiap langkah mengambil pilihan yang terbaik yang dapat diperoleh pada saat itu tanpa memperhatikan konsekuensi ke depan 
+13516136_027 yang kedua terus berharap bahwa dengan memilih optimum lokal pada setiap langkah akan berakhir dengan optimum global 
+13516136_028 kira-kira seperti itu ringkasnya
+13516136_029 nah kita tinjau sekarang masalah yang tadi penukaran uang 
+13516136_030 nah strategi greedy berarti apa
+13516136_031 pada setiap langkah pilihlah koin dengan nilai terbesar dari himpunan koin yang tersisa 
+13516136_032 misal a tiga dua koin yang tersedia satu lima sepuluh dan dua lima 
+13516136_033 langkah satu berarti yang dipilih adalah dua lima 
+13516136_034 terus angka kedua karena sisanya dah tinggal tujuh belas maka yang diambil satu buah 
+13516136_035 langkah keduanya nah <eumm> ya mungkin saya kurang paham yang di bagian ini jadi kita lanjutkan saja 
+13516136_036 nah jadi elemen-elemen algoritma greedy itu sendiri ada lima 
+13516136_037 yang pertama itu ada namanya himpunan kandidat biasanya disingkat dengan c 
+13516136_038 terus yang kedua adalah himpunan solusi yang disebut sebagai s 
+13516136_039 terus ada juga fungsi seleksi 
+13516136_040 ada juga fungsi kelayakan 
+13516136_041 ada juga fungsi objektif 
+13516136_042 dengan kata lain algoritma greedy melibatkan pencarian sebuah himpunan bagian s dari himpunan kandidat c yang dalam hal ini s harus memenuhi beberapa kriteria yang ditentukan yaitu menyatakan suatu solusi dan s dioptimasi oleh fungsi objektif 
+13516136_043 nah pada masalah penukaran uang himpunan kandidatnya sendiri adalah himpunan koin yang merepresentasikan nilai satu lima sepuluh dua lima 
+13516136_044 paling sedikit mengandung satu koin untuk setiap nilai 
+13516136_045 sedangkan himpunan solusinya itu total nilai koin yang dipilih tepat sama jumlahnya <dengen> dengan nilai uang yang ditukarkan 
+13516136_046 terus fungsi seleksinya pilihlah koin yang bernilai tertinggi dari himpunan kandidat yang tersisa 
+13516136_047 terus fungsi layaknya memerika apakah nilai total dari himpunan koin yang terpilih terpilih dipilih tidak melebihi jumlah uang yang harus dibayar 
+13516136_048 terus fungsi objektifnya kapan harus selesainya tadi 
+13516136_049 ya ketika jumlah koin yang digunakan adalah minimum 
+13516136_050 nah di dalam <fung> dalam algoritma greedy ini sendiri ya terdapat optimum global itu belum tentu merupakan solusi optimum 
+13516136_051 tetapi sub optimum atau pseudo optimum 
+13516136_052 alasannya algoritma greedy tidak beroperasi secara menyeluruh terhadap semua alternatif solusi yang ada 
+13516136_053 sebagaimana pada ya algoritma yang sebelumnya yang kita pelajari yang itu exhaustive search dan terdapat beberapa fungsi seleksi yang berbeda 
+13516136_054 sehingga ya kita harus memilih fungsi yang tepat jika kita ingin algoritma ini menghasilkan solusi yang optimal 
+13516136_055 jadi sebenarnya pada sebagian besar masalah algoritma greedy tidak selalu berhasil memberikan solusi yang optimal 
+13516136_056 nah jadi seperti itu 
+13516136_057 nah persoalannya berbeda lagi 
+13516136_058 contohnya kalau di mata uang dollar amerika serikat atau euro eropa atau crown swedia 
+13516136_059 algoritma greedy selalu memberikan solusi optimum 
+13516136_060 contoh enam koma tiga sembilan ditukar dengan uang kertas dan koin sen 
+13516136_061 kita dapat memilih ya <le> <se> <sa> satu buah uang kertas lima satu buah uang kertas senilai satu dollar satu koin dua puluh lima sen satu koin sepuluh sen empat koin satu sen 
+13516136_062 nah kenapa ini bisa selalu tepat karena ya memang ada sen disana 
+13516136_063 jadi relatif lebih bisa diselesaikan dengan algoritma greedy persoalan-persoalan penukaran mata uangnya 
+13516136_064 nah tapi sebenarnya jika jawaban terbaik mutlak <ti> tidak diperlukan maka algoritma greedy bisa dipakai menjadi <eum> opsi yang utama karena bisa menghasilkan solusi hampiran yang <mendeka> yang cukup mendekati 
+13516136_065 ya daripada menggunakan algoritma yang lebih rumit untuk menghasilkan solusi yang eksak itu kan relatif membutuhkan waktu yang banyak 
+13516136_066 sedangkan kalo algoritma greedy terkadang bisa juga optimum tapi setidaknya ada hampiran mendekati solusi yang optimum 
+13516136_067 nah sebenarnya <eum> agar pemilihan koin berikutnya optimum sebenarnya untuk masalah tadi himpunan koin dalam urutannya menurun bisa diselesaikan dengan cara yang lain 
+13516136_068 nah tapi kali ini kita akan bahas yang lainnya saja 
+13516136_069 nah disini ada persoalan terakhir kita mau bahas tentang integer knapsack yang sudah dijelaskan di minggu yang sebelumnya 
+13516136_070 nah persoalannya disini kalau ini diselesaikan dengan <eum> pendekatan algoritma greedy caranya berarti masukkan objek satu per satu ke dalam knapsack 
+13516136_071 sekali objek dimasukkan ke dalam knapsack objek tersebut tidak bisa dikeluarkan lagi 
+13516136_072 nah terdapat beberapa strategi greedy yang heuristik yang dapat digunakan untuk memilih objek yang akan dimasukkan ke dalam knapsack 
+13516136_073 nah pertama greedy by profit 
+13516136_074 disini pada setiap langkah pilih objek yang mempunyai keuntungan terbesar 
+13516136_075 <nee> motivasinya yaitu mencoba memaksimumkan keuntungan dengan memilih objek yang paling menguntungkan terlebih dahulu 
+13516136_076 terus bisa greedy by weight pada setiap langkah pilih setiap objek yang mempunyai berat teringan 
+13516136_077 sehingga mencoba memaksimalkan keuntungan dengan memasukkan sebanyak mungkin barang ke dalam knapsack 
+13516136_078 yang ketiga itu greedy by density pada setiap langkah knapsack diisi dengan objek yang mempunyai <eum> berat profit per berat yang terbesar 
+13516136_079 dengan disini motivasinya mencoba memaksimumkan keuntungan dengan memilih objek yang mempunyai keuntungan per unit berat terbesar 
+13516136_080 nah pemilihan objek ini berdasarkan salah satu dari ketiga strategi diatas tidak menjamin akan memberikan solusi optimal 
+13516136_081 ya terlihat sendiri ya bahwa sebenarnya setiap kasus pasti ada yang akan tidak mencapai optimum globalnya 
+13516136_082 nah kalau penasaran bagaimana contoh kasusnya bisa dilihat seperti di slide 
+13516136_083 nah jadi yang bisa disimpulkan disini adalah sebenarnya algoritma greedy tidak akan selalu berhasil menemukan solusi optimal untuk masalah knapsack 
+13516136_084 tetapi untuk contoh kasus knapsack yang lain yaitu fractional knapsack nah ini bisa 
+13516136_085 nah itu nanti teman-teman boleh cari di internet 
+13516136_086 minggu depan akan dikumpulkan menjadi tugas 
+13516136_087 silahkan cari bagaimana algoritma greedy untuk permasalahan fractional knapsack itu bisa diselesaikan dengan optimum selalu 
+13516136_088 <yak> jadi demikian kelas kita pada hari ini kelas dibubarkan
+13516139_001 oke selamat siang semua sekarang kita akan melanjutkan materi dari minggu lalu
+13516139_002 pada minggu lalu kita semua sudah belajar tentang bagaimana membuat desain interaksi berdasarkan perspektif dari permasalahan pengguna
+13516139_003 kita ulang sedikit materi pada minggu lalu yaitu tentang desain yang berpusat pada pengguna
+13516139_004 dalam paradigma desain tersebut terdapat beberapa fase yang setidaknya terdapat dalam langkah-langkah pengerjaan yang dilakukan oleh desainer
+13516139_005 langkah pertama desainer harus memahami konteks penggunaan produk
+13516139_006 hal tersebut dimaksudkan untuk memahami permasalahan ataupun tujuan produk tersebut dibuat
+13516139_007 langkah kedua desainer melakukan riset untuk mencari kebutuhan maupun permasalahan dari sisi pengguna
+13516139_008 riset tersebut dapat dilakukan dengan berbagai macam cara diantaranya adalah dengan wawancara pembuatan kuesioner maupun dengan melakukan pengamatan secara langsung
+13516139_009 langkah ketiga yaitu proses iterasi pembuatan desain produk
+13516139_010 pada tahap ini dilakukan pembuatan prototipe desain berdasarkan riset dari analisa kebutuhan pengguna dan produk yang sebelumnya telah dilakukan
+13516139_011 proses desain dilakukan secara iteratif yaitu desainer membuat beberapa versi desain yang kemudian akan dibandingkan satu sama lain
+13516139_012 hal tersebut berguna untuk mencari beberapa versi desain yang sesuai dengan kebutuhan
+13516139_013 tahap terakhir adalah proses evaluasi dan perbaikan desain
+13516139_014 evaluasi dilakukan dengan cara melakukan pengujian produk kepada target pengguna
+13516139_015 tujuannya adalah untuk mendapatkan timbal balik dari desain produk yang telah dibuat
+13516139_016 apabila terdapat kesalahan desain desainer selanjutnya akan melakukan perbaikan terhadap desain tersebut
+13516139_017 keseluruhan proses dilakukan secara iteratif dengan artian bahwa beberapa langkah dapat dilakukan beberapa kali hingga didapat hasil yang diinginkan
+13516139_018 sekarang kita lanjut ke materi selanjutnya yaitu materi tentang pembuatan prototipe desain
+13516139_019 secara garis besar prototipe dibagi menjadi tiga jenis
+13516139_020 jenis pertama adalah prototipe wireframe
+13516139_021 jenis kedua adalah prototipe low-fidelity
+13516139_022 jenis ketiga adalah prototipe high-fidelity
+13516139_023 pertama kita bahas dulu apa itu prototipe wireframe
+13516139_024 pa pada prototipe jenis ini desain yang dibuat hanyalah kerangka kasar yang menggambarkan tata letak isi konten maupun alur penggunaan
+13516139_025 apabila kamu sering melihat desain aplikasi yang hanya berwarna abu-abu dengan tampilan kasar dan cenderung kosong kemungkinan besar itu adalah prototipe wireframe
+13516139_026 wireframe dibuat tanpa warna dan hanya menggambarkan kerangka tampilan untuk menghindari bias saat membuat desain sehingga desainer dan calon pengguna hanya berfokus pada fungsionalitas utama produk saja
+13516139_027 wireframe juga dibuat secara manual menggunakan tangan dan alat tulis
+13516139_028 namun seiring waktu wireframe juga dapat dibuat menggunakan perangkat lunak yang tersedia di pasaran
+13516139_029 selanjutnya kita bahas tentang prototipe low-fidelity atau yang sering disingkat sebagai lofi
+13516139_030 prototipe lofi merupakan bentuk lanjutan dari prototipe wireframe
+13516139_031 bedanya adalah lofi sudah dalam bentuk prototipe digital dan merupakan versi yang sudah lebih detail dibandingkan wireframe
+13516139_032 pada fase ini di dapat dilakukan pengujian kepada target pengguna dengan hanya fokus kepada struktur tampilan dan alur penggunaannya saja
+13516139_033 dalam pembuatannya bisa menggunakan perangkat lunak untuk desain
+13516139_034 jenis terakhir yang belum kita bahas adalah prototipe high-fidelity atau yang sering disingkat sebagai hifi
+13516139_035 prototipe hifi merupakan bentuk tertinggi dalam prototipe yang sudah memiliki detail berupa warna contoh konten maupun komponen-komponen kecil yang hanya berfungsi sebagai hiasan saja
+13516139_036 prototipe hifi adalah bentuk terdekat yang paling menyerupai produk asli nantinya dengan interaksi yang sudah bisa dicoba oleh target pengguna
+13516139_037 cara pembuatannya pun bermacam-macam bisa membuat versi desainnya saja dengan perangkat lunak ataupun bisa membuat prototipe langsung dengan bahasa pemrograman apabila memungkinkan
+13516139_038 cara pertama adalah cara yang paling sering dipakai oleh desainer karena untuk membuat produk secara langsung membutuhkan tenaga dan waktu yang bisa saja tidak sedikit meskipun itu hanya prototipe
+13516139_039 dalam membuat prototipe hifi desain harus benar-benar sudah mendekati produk aslinya
+13516139_040 hal ini dikarenakan desain akan dilakukan pengujian akhir sebelum masuk fase pengembangan produk
+13516139_041 jadi dari segi warna konten interaksi dan semacamnya harus sudah didesain dengan baik
+13516139_042 bahkan sebisa mungkin tidak ada konten placeholder
+13516139_043 nah barusan sudah kita bahas mengenai garis besar jenis-jenis prototipe yang sering dikembangkan dalam pembuatan desain produk
+13516139_044 ketiga prototipe tersebut hampir bisa dipastikan muncul dalam setiap pengembangan desain jadi ada baiknya bila kalian memahami betul berbagai prototipe tersebut
+13516139_045 selanjutnya kita akan bahas beberapa aspek penting yang tidak boleh dilewatkan dalam membuat desain prototipe
+13516139_046 kali ini mungkin kita lebih fokus ke prototipe hifi dulu ya
+13516139_047 yang pertama adalah warna
+13516139_048 dalam membuat desain penting untuk mengetahui warna yang cocok dan sesuai dengan kebutuhan pengguna
+13516139_049 contohnya saja warna merah atau oranye pada restoran warna biru pada desain bank dan lain-lain
+13516139_050 setiap warna memiliki makna tersendiri dalam desain sehingga desainer tidak bisa sembarangan dalam memilih warna
+13516139_051 dalam dunia psikologi warna terdapat beberapa aspek yang harus diperhatikan
+13516139_052 antara lain emosi warna industri yang cocok dan penggunaan dari warna itu sendiri
+13516139_053 contohnya warna merah memunculkan emosi energik perhatian dan semangat
+13516139_054 maka warna merah sering digunakan dalam industri makanan olahraga hiburan dan sejenisnya
+13516139_055 warna merah yang cenderung terang dan kontras sering dipakai untuk menarik perhatian konsumen agar mau memakai produk tersebut
+13516139_056 contoh lain adalah warna biru yang melambangkan kejujuran kepercayaan dan tanggung jawab
+13516139_057 maka dari itu warna biru sering kita temui dalam industri profesional misalnya industri perbankan keuangan kesehatan dan teknologi
+13516139_058 warna juga bisa berdampak bagi psikologi pengguna misalnya warna biru yang berguna sebagai relaksasi ataupun warna hijau yang menenangkan
+13516139_059 aspek kedua adalah struktur konten
+13516139_060 dalam dunia desain terdapat suatu istilah penting yang mendefinisikan struktur konten yang terdapat dalam suatu desain berikut pula aksesibilitas masing-masing bagian
+13516139_061 struktur tersebut bernama arsitektur informasi
+13516139_062 arsitektur informasi adalah suatu ilmu yang mengatur susunan konten dalam desain umumnya desain produk digital seperti aplikasi dan sejenisnya
+13516139_063 arsitektur ini bertujuan untuk mengatur konten dan halaman sehingga pengguna bisa mudah beradaptasi dengan desain tersebut dan memahami alur penggunaan aplikasi dengan baik
+13516139_064 arsitektur informasi didefinisikan sebagai graf dengan setiap komponen adalah halaman aplikasi yang merupakan titik asal penggunaan ataupun lanjutan dari tampilan sebelumnya
+13516139_065 untuk mendefinisikan struktur konten desainer perlu mempertimbangkan beberapa aspek
+13516139_066 misalnya apakah itu aplikasi mobile atau web kemudian target pengguna dan juga tipe produk dan tujuan perusahaan
+13516139_067 contohnya saja struktur konten pada web blog dan web e-commerce berbeda jauh satu sama lain
+13516139_068 arsitektur informasi merupakan kerangka utama dari suatu desain umumnya disusun bahkan sejak masih dalam tahap desain wireframe
+13516139_069 dalam membuat arsitektur terdapat beberapa jenis struktur organisasi konten
+13516139_070 jenis pertama adalah struktur hierarki
+13516139_071 hierarki visual bertujuan memberi gambaran jelas kepada user bahwa konten pada aplikasi tersusun dengan jelas dan baik
+13516139_072 pada umumnya desain aplikasi menggunakan struktur konten hierarki karena struktur ini paling mudah dipahami oleh pengguna secara umum
+13516139_073 jenis kedua adalah struktur sekuensial
+13516139_074 struktur ini memberikan gambaran bahwa konten aplikasi diakses secara berurut dengan langkah tertentu
+13516139_075 struktur sekuensial umumnya digunakan dalam suatu alur tertentu seperti alur pembelian barang yang terdiri dari pemesanan pembayaran pengiriman dan lain-lain
+13516139_076 jenis ketiga adalah struktur matriks
+13516139_077 struktur ini merupakan struktur yang cukup kompleks untuk dipahami karena pengguna diberikan kebebasan untuk mengakses konten manapun tanpa adanya hierarki yang baku
+13516139_078 contohnya pengguna melakukan navigasi konten yang disusun berdasarkan tanggal topik ataupun kategori tertentu yang dipilih sendiri
+13516139_079 aspek terakhir adalah ilustrasi dan tulisan
+13516139_080 penggunaan keduanya penting untuk memberikan kesan ramah dan komunikatif kepada pengguna
+13516139_081 ilustrasi umum digunakan untuk mendefinisikan branding produk agar lekat dengan pengguna
+13516139_082 ilustrasi juga berguna untuk memberikan karakter pada desain aplikasi sehingga bisa lebih diingat oleh pengguna
+13516139_083 untuk pemakaian ilustrasi adalah pada pesan error ataupun status pada aplikasi
+13516139_084 penggunaan tulisan juga <su> sangat penting untuk diperhatikan karena dengan cara tersebut aplikasi berkomunikasi dengan penggunanya
+13516139_085 hal yang harus diperhatikan misalnya dengan tidak membuat kalimat terlihat seperti berteriak ataupun penggunaan diksi yang tepat sesuai dengan target penggunanya
+13516139_086 nah hari ini kita sudah selesai belajar materi tentang desain berpusat pengguna sekaligus materi tentang berbagai macam prototipe
+13516139_087 tentunya materi ini harus diulang sendiri hingga paham dengan baik
+13516139_088 dan juga kalian harus sering mencari inspirasi dari internet untuk mengikuti tren desain yang beredar sekarang ini
+13516139_089 karena cara belajar yang paling ampuh adalah dengan latihan
+13516139_090 nah agar kalian latihan ini ada tugas kelompok yang harus dikumpulkan dua minggu lagi
+13516139_091 coba cari materi tambahan di internet agar kalian paham praktiknya seperti apa
+13516139_092 sekian pertemuan hari ini terima kasih dan selamat siang
+13516144_001 halo selamat pagi
+13516144_002 untuk sepuluh menit ke depan saya adalah dosen fisika anda
+13516144_003 mari kita memulai materi fisika dengan bab pertama yaitu bab pengukuran
+13516144_004 sains dan engineering didasarkan pada pengukuran dan perbandingan
+13516144_005 oleh karena itu kita memerlukan aturan-aturan tentang bagaimana sesuatu itu diukur dan dibandingkan dan kita juga memerlukan eksperimen untuk menciptakan satuan dari pengukuran dan perbandingan tersebut
+13516144_006 salah satu tujuan dari fisika dan engineering adalah untuk merancang dan melaksanakan eksperimen tersebut
+13516144_007 contohnya seorang ahli fisika berusaha untuk mengembangkan jam dengan akurasi yang tinggi sehingga waktu kapan pun atau interval waktu dapat ditentukan dan dibandingkan dengan tepat
+13516144_008 anda mungkin bertanya-tanya apakah akurasi benar-benar dibutuhkan atau sepadan dengan kerja keras yang dilakukan
+13516144_009 ini contohnya 
+13516144_010 tanpa adanya jam dengan akurasi yang tinggi gps yang saat ini sangat vital untuk sistem navigasi dunia tidak akan berguna
+13516144_011 kita memperdalam ilmu fisika dengan mempelajari bagaimana mengukur besaran yang ada dalam fisika
+13516144_012 di antara besaran-besaran tersebut adalah panjang waktu massa suhu tekanan dan arus listrik
+13516144_013 kita mengukur setiap besaran fisik dalam satuannya masing-masing menggunakan perbandingan terhadap suatu standar
+13516144_014 satuan adalah nama unik yang kita tetapkan untuk mengukur besaran tersebut misalnya meter untuk besaran panjang
+13516144_015 sebuah nilai baku yang sesuai dengan satu satuan besaran
+13516144_016 seperti yang dapat anda lihat standar untuk panjang yang sesuai dengan tepat satu meter adalah jarak yang ditempuh cahaya dalam ruang hampa selama fraksi waktu tertentu
+13516144_017 kita dapat mendefinisikan satuan dan standarnya dengan cara apa pun yang kita inginkan
+13516144_018 namun yang terpenting adalah untuk melakukannya dengan suatu cara di mana para ilmuwan di seluruh dunia setuju bahwa definisi yang kita buat tersebut masuk akal dan praktis
+13516144_019 begitu kita telah menetapkan standar
+13516144_020 misalnya untuk panjang
+13516144_021 kita harus menyusun prosedur di mana setiap besaran panjang apapun baik itu jari-jari atom hidrogen jarak roda skateboard atau jarak ke bintang atau jarak antar kota dapat dinyatakan dalam suatu standar
+13516144_022 penggaris ini contohnya yang digunakan untuk mengukur standar panjang memberikan kita salah satu prosedur dalam mengukur panjang
+13516144_023 meskipun demikian beberapa alat pembanding yang kita miliki harus digunakan dengan cara tidak langsung
+13516144_024 sebagai contoh anda tidak dapat menggunakan penggaris untuk mengukur jari-jari atom atau jarak ke bintang
+13516144_025 terdapat banyak sekali besaran fisika sehingga sulit untuk mengelompokkannya
+13516144_026 untungnya tidak semua besaran berdiri sendiri 
+13516144_027 misalnya laju adalah rasio antara jarak dan waktu
+13516144_028 jadi yang kita lakukan adalah memilih dengan persetujuan internasional sejumlah kecil besaran fisika dalam contoh ini adalah panjang dan waktu kemudian menetapkan standar untuk masing-masing besaran tersebut
+13516144_029 kemudian kita mendefinisikan besaran fisika lainnya dalam besaran pokok tersebut dan menggunakan standar yang digunakannya atau yang kita sebut standar pokok
+13516144_030 sebagai contoh laju yang tadi didefinisikan dalam besaran pokok panjang dan waktu dan menggunakan standar pokok keduanya
+13516144_031 standar pokok harus dapat diperoleh dan seragam atau tetap
+13516144_032 bila kita mendefinisikan standar panjang sebagai jarak antara hidung seseorang dengan ujung jari telunjuk dari lengan yang diregangkan pastinya kita akan mendapat standar yang mudah diperoleh tetapi tentunya akan berbeda-beda untuk tiap orang 
+13516144_033 kebutuhan akan ketelitian dalam sains dan engineering menuntut kita untuk mendahulukan keseragaman
+13516144_034 setelah itu barulah kita berusaha semaksimal mungkin untuk membuat duplikat dari standar dasar yang dapat dicapai bagi yang membutuhkannya
+13516144_035 oleh karena itu di tahun sembilan belas tujuh satu general conference on weights and measures ke empat belas memilih tujuh besaran sebagai besaran pokok dan menjadi dasar terbentuknya satuan sistem internasional yang sering kita sebut sebagai satuan SI dan dikenal dengan sebutan sistem metrik
+13516144_036 untuk satuan pokok ini ada waktu dengan detik atau sekon ada panjang dengan satuannya meter massa dengan satuannya kilogram arus listrik dengan satuannya ampere suhu dengan satuannya kelvin jumlah zat dengan satuannya mol dan intensitas cahaya dengan satuannya candela
+13516144_037 banyak satuan turunan standar internasional yang didefinisikan dari satuan pokok ini
+13516144_038 misalnya satuan SI untuk daya yaitu watt didefinisikan dalam satuan pokok untuk massa panjang dan waktu
+13516144_039 karena satu watt sama dengan satu kilogram kali meter persegi bagi detik pangkat tiga
+13516144_040 untuk menyatakan besaran yang sangat besar dan besaran yang sangat kecil yang biasa kita temui dalam fisika digunakan notasi ilmiah yang menggunakan pangkat dari sepuluh
+13516144_041 misalnya tiga puluh lima juta bisa kita tuliskan dengan tiga koma lima kali sepuluh pangkat tujuh
+13516144_042 notasi ilmiah pada komputer kadang bahkan menggunakan pernyataan yang lebih singkat
+13516144_043 misalnya kalau kasus tadi tiga puluh lima juta dituliskan tiga koma lima e tujuh dimana e adalah eksponen dari sepuluh
+13516144_044 dan bahkan dibeberapa kalkulator e hanya diganti sebagai spasi kosong
+13516144_045 untuk kenyamanan lebih lanjut ketika berhadapan dengan ukuran yang sangat besar atau sangat kecil kita gunakan awalan awalan seperti yang saya akan sebutkan seperti berikut
+13516144_046 giga yaitu sepuluh pangkat sembilan
+13516144_047 mega yaitu sepuluh pangkat enam
+13516144_048 kilo yaitu sepuluh pangkat tiga
+13516144_049 centi sepuluh pangkat minus dua
+13516144_050 mili sepuluh pangkat minus dua
+13516144_051 mikro sepuluh pangkat minus enam
+13516144_052 nano sepuluh pangkat minus sembilan
+13516144_053 pico sepuluh pangkat minus dua belas
+13516144_054 berikut yang sering digunakan
+13516144_055 menempelkan awalan tersebut pada satuan SI memberikan efek mengalikan dengan faktor yang terkait
+13516144_056 contohnya tadi tiga puluh lima juta asumsikan kita berikan satuan watt jadi tiga puluh lima juta watt kita bisa sebutkan dengan tiga puluh lima mega watt
+13516144_057 untuk sesi kuliah pertama dicukupkan
+13516144_058 tugas sesi ini adalah mencari dan menuliskan satuan turunan SI
+13516144_059 demikian terima kasih
+13516144_060 selamat pagi
