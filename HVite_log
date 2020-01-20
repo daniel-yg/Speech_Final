@@ -1,0 +1,1793 @@
+HVite -A -D -T 1 -l * -o SWT -C config -H hmm7/macros -H hmm7/hmmdefs -i aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I words.mlf -S train.scp dict monophones1 
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND            MFCC_0_D_A
+
+Read 34 physical / 34 logical HMMs
+Label file will be used to align each file
+Aligning File: res/wav/13516130_001.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+hari ini kita akan belajar tentang sentimen analisis  ==  [387 frames] -79.4584 [Ac=-30750.4 LM=0.0] (Act=19.3)
+Aligning File: res/wav/13516130_002.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+No tokens survived to final node of network at beam 250.0
+kenapa sih kita perlu belajar sentimen analisis  ==  [316 frames] -82.8140 [Ac=-26169.2 LM=0.0] (Act=28.8)
+Aligning File: res/wav/13516130_003.mfc
+Created lattice with 24 nodes / 23 arcs from label file
+sentimen analisis ini dilakukan untuk memahami opini orang terhadap sesuatu baik itu orang lain baik itu sebuah perusahaan baik itu produk pemerintah dan lain-lain  ==  [1297 frames] -79.4796 [Ac=-103085.1 LM=0.0] (Act=26.0)
+Aligning File: res/wav/13516130_004.mfc
+Created lattice with 23 nodes / 22 arcs from label file
+dengan adanya sentimen analisis kita tidak perlu lagi untuk melakukan survey terhadap opini orang akan produk kita dan ini akan mengurangi pengeluaran kita  ==  [1317 frames] -78.9509 [Ac=-103978.3 LM=0.0] (Act=26.6)
+Aligning File: res/wav/13516130_005.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+tipe opini terdiri dari dua macam  ==  [402 frames] -76.8295 [Ac=-30885.5 LM=0.0] (Act=17.7)
+Aligning File: res/wav/13516130_006.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+yang pertama adalah opini regular atau opini yang di dalamnya hanya menilai satu objek saja  ==  [748 frames] -78.9190 [Ac=-59031.4 LM=0.0] (Act=21.8)
+Aligning File: res/wav/13516130_007.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+nah di sini ada dua jenis ada opini yang sentimennya dinyatakan secara eksplisit ada juga yang dinyatakan secara implisit  ==  [841 frames] -80.3600 [Ac=-67582.7 LM=0.0] (Act=22.8)
+Aligning File: res/wav/13516130_008.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+tipe opini yang kedua adalah tipe opini komparatif atau perbandingan  ==  [527 frames] -80.5790 [Ac=-42465.1 LM=0.0] (Act=22.1)
+Aligning File: res/wav/13516130_009.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+nah di dalam opini ini objek yang dibandingkan itu adalah berjumlah dua atau lebih  ==  [617 frames] -77.9565 [Ac=-48099.1 LM=0.0] (Act=20.1)
+Aligning File: res/wav/13516130_010.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+contohnya rasa dari pepsi lebih enak dari coca-cola  ==  [442 frames] -78.2596 [Ac=-34590.7 LM=0.0] (Act=15.8)
+Aligning File: res/wav/13516130_011.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+nah dari opini tersebut kan bisa dilihat kan kalo misalnya objek yang dibandingkan itu ada dua yaitu pepsi dan coca-cola  ==  [1161 frames] -77.1346 [Ac=-89553.3 LM=0.0] (Act=15.4)
+Aligning File: res/wav/13516130_012.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+opini bisa didefinisikan menjadi empat variabel  ==  [380 frames] -80.9732 [Ac=-30769.8 LM=0.0] (Act=19.8)
+Aligning File: res/wav/13516130_013.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+yang pertama adalah variabel g atau target  ==  [316 frames] -80.7740 [Ac=-25524.6 LM=0.0] (Act=25.2)
+Aligning File: res/wav/13516130_014.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+target yang dimaksud adalah objek yang akan dinilai sentimennya  ==  [464 frames] -79.6980 [Ac=-36979.9 LM=0.0] (Act=18.0)
+Aligning File: res/wav/13516130_015.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+yang kedua yaitu s atau sentimen  ==  [310 frames] -81.2674 [Ac=-25192.9 LM=0.0] (Act=26.0)
+Aligning File: res/wav/13516130_016.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+jadi ini merupakan nilai sentimen tersebut apakah positif negatif atau netral  ==  [547 frames] -81.8741 [Ac=-44785.1 LM=0.0] (Act=18.7)
+Aligning File: res/wav/13516130_017.mfc
+Created lattice with 42 nodes / 41 arcs from label file
+yang ketiga adalah h atau pemegang opini yaitu siapa orang yang menyatakan opini tersebut dan yang keempat adalah t yaitu time yaitu kapan sih opini itu dibuat karena data dari waktu ini tuh sangat penting untuk melihat perubahan opini seiring berjalannya waktu  ==  [1980 frames] -81.2418 [Ac=-160858.7 LM=0.0] (Act=26.5)
+Aligning File: res/wav/13516130_018.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+seharusnya dalam sebuah produk itu semakin hari produknya semakin baik sehingga opininya seharusnya semakin baik juga  ==  [869 frames] -80.2917 [Ac=-69773.5 LM=0.0] (Act=24.6)
+Aligning File: res/wav/13516130_019.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+dalam melakukan analisis sentimen dibagi menjadi beberapa level  ==  [620 frames] -76.9684 [Ac=-47720.4 LM=0.0] (Act=22.6)
+Aligning File: res/wav/13516130_020.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+yang pertama itu adalah dokumen level  ==  [251 frames] -80.0891 [Ac=-20102.4 LM=0.0] (Act=16.5)
+Aligning File: res/wav/13516130_021.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+dokumen level ini intinya proses ini menilai suatu dokumen itu sentimennya negatif atau positif  ==  [957 frames] -76.4663 [Ac=-73178.2 LM=0.0] (Act=18.0)
+Aligning File: res/wav/13516130_022.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+jadi diasumsikan dokumen tersebut hanya memiliki satu jenis sentimen  ==  [455 frames] -80.2370 [Ac=-36507.8 LM=0.0] (Act=19.3)
+Aligning File: res/wav/13516130_023.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+yang kedua adalah sentence level atau level kalimat  ==  [495 frames] -78.9925 [Ac=-39101.3 LM=0.0] (Act=22.7)
+Aligning File: res/wav/13516130_024.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+di sini analisis dilakukan terhadap tiap kalimat  ==  [409 frames] -81.2964 [Ac=-33250.2 LM=0.0] (Act=27.4)
+Aligning File: res/wav/13516130_025.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+No tokens survived to final node of network at beam 250.0
+jadi nanti hasilnya adalah sentimen dari tiap kalimat tersebut  ==  [471 frames] -80.7284 [Ac=-38023.1 LM=0.0] (Act=32.0)
+Aligning File: res/wav/13516130_026.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+yang terakhir ada aspect based analisis  ==  [299 frames] -82.3655 [Ac=-24627.3 LM=0.0] (Act=26.5)
+Aligning File: res/wav/13516130_027.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jadi analisis dilakukan berdasarkan aspek  ==  [293 frames] -82.3396 [Ac=-24125.5 LM=0.0] (Act=17.6)
+Aligning File: res/wav/13516130_028.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+contohnya adalah kualitas telefon samsung baik tetapi kualitas baterainya buruk karena dia gampang mati  ==  [809 frames] -80.0971 [Ac=-64798.5 LM=0.0] (Act=23.2)
+Aligning File: res/wav/13516130_029.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+nah di sini kan terlihat bahwa dia menilai dua aspek yaitu kualitas telefon dan kualitas baterai  ==  [736 frames] -79.7203 [Ac=-58674.1 LM=0.0] (Act=18.6)
+Aligning File: res/wav/13516130_030.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+No tokens survived to final node of network at beam 250.0
+nanti hasil sentimennya adalah berdasarkan kedua aspek tersebut  ==  [392 frames] -82.4335 [Ac=-32313.9 LM=0.0] (Act=38.2)
+Aligning File: res/wav/13516130_031.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+daftar kata sentimen bisa diberikan secara manual bisa melalui kamus bisa melalui korpus dan juga bisa melalui sentiwordnet  ==  [958 frames] -80.4552 [Ac=-77076.1 LM=0.0] (Act=23.2)
+Aligning File: res/wav/13516130_032.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+dalam melakukan sentimen analisis ada beberapa tahap yang perlu dilakukan  ==  [431 frames] -81.0001 [Ac=-34911.0 LM=0.0] (Act=23.1)
+Aligning File: res/wav/13516130_033.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+yang pertama kita harus menentukan apakah sebuah kalimat itu opini atau bukan karena mungkin aja kan ada kalimat yang bukan merupakan opini  ==  [837 frames] -83.1625 [Ac=-69607.0 LM=0.0] (Act=26.9)
+Aligning File: res/wav/13516130_034.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+contohnya os samsung baru sudah rilis  ==  [309 frames] -77.7675 [Ac=-24030.1 LM=0.0] (Act=17.8)
+Aligning File: res/wav/13516130_035.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+nah disini kan hanya menyatakan informasi dia tidak menyatakan opini  ==  [378 frames] -83.7144 [Ac=-31644.1 LM=0.0] (Act=20.3)
+Aligning File: res/wav/13516130_036.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+tetapi kalo misalnya dia menyatakan bahwa os samsung baru tampilannya enak itu kan opini  ==  [650 frames] -79.9307 [Ac=-51955.0 LM=0.0] (Act=19.0)
+Aligning File: res/wav/13516130_037.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+nah kita harus menentukan mana yang opini mana yang bukan  ==  [340 frames] -80.3738 [Ac=-27327.1 LM=0.0] (Act=27.6)
+Aligning File: res/wav/13516130_038.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+kalimat yang merupakan opini setelah itu ditentukan polaritasnya apakah positif negatif atau netral  ==  [632 frames] -83.1617 [Ac=-52558.2 LM=0.0] (Act=19.0)
+Aligning File: res/wav/13516130_039.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+setelah ditentukan polaritasnya kita harus menentukan kekuatan dari polaritas tersebut  ==  [510 frames] -83.7752 [Ac=-42725.4 LM=0.0] (Act=19.2)
+Aligning File: res/wav/13516130_040.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+apakah sangat positif apakah sangat negatif atau positif saja dan seterusnya  ==  [505 frames] -82.7989 [Ac=-41813.4 LM=0.0] (Act=20.3)
+Aligning File: res/wav/13516130_041.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+yang terakhir adalah tingkat yang paling tinggi yaitu kita harus bisa mengambil atribut dari objek serta nilai atribut tersebut  ==  [791 frames] -82.5959 [Ac=-65333.3 LM=0.0] (Act=26.7)
+Aligning File: res/wav/13516130_042.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+contohnya kita harus bisa mengambil bahwa objek yang dinilai adalah samsung dan atributnya adalah tampilannya enak misalnya seperti itu  ==  [928 frames] -79.8545 [Ac=-74105.0 LM=0.0] (Act=48.9)
+Aligning File: res/wav/13516130_043.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+nah fitur-fitur dasar dari sentimen analisis yang pertama adalah term dan bobotnya  ==  [644 frames] -79.2869 [Ac=-51060.7 LM=0.0] (Act=19.9)
+Aligning File: res/wav/13516130_044.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+disini bisa diambil dari tf atau tf idf  ==  [382 frames] -80.2730 [Ac=-30664.3 LM=0.0] (Act=17.1)
+Aligning File: res/wav/13516130_045.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+yang kedua jenis kata juga bisa menjadi fitur dasar  ==  [372 frames] -82.2245 [Ac=-30587.5 LM=0.0] (Act=27.6)
+Aligning File: res/wav/13516130_046.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+selanjutnya daftar kata sentimen  ==  [266 frames] -79.0516 [Ac=-21027.7 LM=0.0] (Act=16.0)
+Aligning File: res/wav/13516130_047.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+selanjutnya informasi sintaksis sentimen shifter dan rules of opinion  ==  [781 frames] -77.6259 [Ac=-60625.8 LM=0.0] (Act=18.9)
+Aligning File: res/wav/13516130_048.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah terdapat beberapa permasalahan nih tapi dari sentimen analisis  ==  [445 frames] -80.1702 [Ac=-35675.7 LM=0.0] (Act=21.9)
+Aligning File: res/wav/13516130_049.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+yang pertama itu adalah ner atau named entity recognition  ==  [458 frames] -79.7066 [Ac=-36505.6 LM=0.0] (Act=18.5)
+Aligning File: res/wav/13516130_050.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+kita harus tau kan mana yang menjadi entitas  ==  [288 frames] -81.6648 [Ac=-23519.5 LM=0.0] (Act=22.8)
+Aligning File: res/wav/13516130_051.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+contohnya itu kalo sulit adalah jika satu entitas lebih dari dua kata  ==  [450 frames] -82.2758 [Ac=-37024.1 LM=0.0] (Act=21.9)
+Aligning File: res/wav/13516130_052.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+misalnya barack obama berhasil mengurangi titik titik titik  ==  [460 frames] -78.5933 [Ac=-36152.9 LM=0.0] (Act=21.7)
+Aligning File: res/wav/13516130_053.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+nah barack obama ini kan adalah suatu entitas tetapi terdiri dari dua kata  ==  [504 frames] -80.4801 [Ac=-40561.9 LM=0.0] (Act=21.2)
+Aligning File: res/wav/13516130_054.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+nah selain itu yang menjadi permasalahan adalah ironi atau sarkastik  ==  [562 frames] -80.2894 [Ac=-45122.7 LM=0.0] (Act=22.9)
+Aligning File: res/wav/13516130_055.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+nah disini tuh banyak banget orang yang biasanya menyampaikan opini secara sarkastik  ==  [451 frames] -84.2978 [Ac=-38018.3 LM=0.0] (Act=28.2)
+Aligning File: res/wav/13516130_056.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+salah satu contohnya adalah kalimat berikut  ==  [287 frames] -80.9892 [Ac=-23243.9 LM=0.0] (Act=21.7)
+Aligning File: res/wav/13516130_057.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+pemerintah makin hebat saja ngambil mentri dari partai yang terkenal korupsi  ==  [451 frames] -81.4275 [Ac=-36723.8 LM=0.0] (Act=20.9)
+Aligning File: res/wav/13516130_058.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah disini kan dia mengatakan bahwa pemerintah hebat kan  ==  [318 frames] -83.9645 [Ac=-26700.7 LM=0.0] (Act=28.4)
+Aligning File: res/wav/13516130_059.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+padahal nyatanya dari partai yang terkenal korupsi itu adalah sesuatu yang buruk jadi ini merupakan kalimat sarkastik  ==  [621 frames] -82.8249 [Ac=-51434.3 LM=0.0] (Act=25.3)
+Aligning File: res/wav/13516130_060.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+selanjutnya permasalahannya adalah jika menggunakan bahasa non formal  ==  [448 frames] -79.0586 [Ac=-35418.2 LM=0.0] (Act=21.8)
+Aligning File: res/wav/13516130_061.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+banyak orang yang memberikan opini itu menggunakan bahasa sehari-hari atau bahkan ada juga yang menggunakan bahasa daerah  ==  [686 frames] -82.0788 [Ac=-56306.1 LM=0.0] (Act=29.9)
+Aligning File: res/wav/13516130_062.mfc
+Created lattice with 23 nodes / 22 arcs from label file
+nah ini merupakan kesulitan karena biasanya dalam sentimen analisis itu bahasa yang digunakan bahasa formal kalo berasal dari korpus dari kamus dan semacamnya  ==  [1027 frames] -79.1619 [Ac=-81299.3 LM=0.0] (Act=23.2)
+Aligning File: res/wav/13516130_063.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+selain itu kemasalahannya itu adalah tiap sentimen itu sangat bergantung terhadap konteks dan sangat bergantung terhadap domainnya  ==  [820 frames] -81.6380 [Ac=-66943.1 LM=0.0] (Act=21.6)
+Aligning File: res/wav/13516130_064.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+contohnya nih misalnya ada kalimat baca bukunya aja  ==  [381 frames] -81.2227 [Ac=-30945.9 LM=0.0] (Act=29.5)
+Aligning File: res/wav/13516130_065.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+nah ini adalah sebuah sentimen yang positif jika ini adalah review dari sebuah buku  ==  [605 frames] -82.0053 [Ac=-49613.2 LM=0.0] (Act=24.8)
+Aligning File: res/wav/13516130_066.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+berarti seseorang menganjurkan orang lain untuk membaca buku tersebut  ==  [352 frames] -83.9770 [Ac=-29559.9 LM=0.0] (Act=25.3)
+Aligning File: res/wav/13516130_067.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+berarti buku itu memiliki nilai yang bagus  ==  [245 frames] -83.8156 [Ac=-20534.8 LM=0.0] (Act=20.1)
+Aligning File: res/wav/13516130_068.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+nah tetapi kalimat baca bukunya saja akan menjadi sentimen yang negatif jika domainnya adalah domain film  ==  [655 frames] -82.8214 [Ac=-54248.0 LM=0.0] (Act=25.1)
+Aligning File: res/wav/13516130_069.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+jadi filmnya itu sangat buruk sehingga orang-orang menyuruh mereka membaca bukunya saja  ==  [532 frames] -81.6978 [Ac=-43463.2 LM=0.0] (Act=24.6)
+Aligning File: res/wav/13516130_070.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+jadi sentimen analisis ini sangat dipengaruhi oleh domain  ==  [453 frames] -79.8639 [Ac=-36178.3 LM=0.0] (Act=20.6)
+Aligning File: res/wav/13516130_071.mfc
+Created lattice with 23 nodes / 22 arcs from label file
+selanjutnya jika tadi opini itu dapat didefinisikan oleh empat variabel berbeda dengan aspect based opini dimana aspect based opini didefinisikan oleh enam variabel  ==  [1153 frames] -81.4214 [Ac=-93878.9 LM=0.0] (Act=20.2)
+Aligning File: res/wav/13516130_072.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+yang pertama itu adalah variabel e atau entitas  ==  [403 frames] -78.4461 [Ac=-31613.8 LM=0.0] (Act=20.8)
+Aligning File: res/wav/13516130_073.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+jadi kita harus mendefinisikan apa entitas dari opini tersebut  ==  [403 frames] -82.6542 [Ac=-33309.6 LM=0.0] (Act=19.0)
+Aligning File: res/wav/13516130_074.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+yang kedua itu adalah aspek  ==  [324 frames] -77.5632 [Ac=-25130.5 LM=0.0] (Act=20.7)
+Aligning File: res/wav/13516130_075.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jadi entitas tersebut aspeknya apa  ==  [246 frames] -81.2092 [Ac=-19977.5 LM=0.0] (Act=15.6)
+Aligning File: res/wav/13516130_076.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+yang ketiga itu adalah s yaitu nilai sentimennya  ==  [307 frames] -81.0561 [Ac=-24884.2 LM=0.0] (Act=20.7)
+Aligning File: res/wav/13516130_077.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+lalu yang keempat adalah h yaitu pemegang opini dan yang terakhir adalah t yaitu waktu  ==  [721 frames] -79.7028 [Ac=-57465.7 LM=0.0] (Act=29.2)
+Aligning File: res/wav/13516130_078.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+secara umum arsitektur dari sentimen analisis yang pertama adalah input  ==  [603 frames] -79.3593 [Ac=-47853.7 LM=0.0] (Act=23.4)
+Aligning File: res/wav/13516130_079.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+sudah jelas bahwa kita harus menerima input baik itu dokumen ataupun kalimat  ==  [472 frames] -82.0978 [Ac=-38750.1 LM=0.0] (Act=23.4)
+Aligning File: res/wav/13516130_080.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+setelah itu dari input kita melakukan ekstraksi fitur  ==  [342 frames] -84.1543 [Ac=-28780.8 LM=0.0] (Act=21.5)
+Aligning File: res/wav/13516130_081.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+jadi kita mengambil fitur-fitur apa saja yang bisa diambil dari input tersebut  ==  [444 frames] -82.0702 [Ac=-36439.2 LM=0.0] (Act=21.5)
+Aligning File: res/wav/13516130_082.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+nah untuk melakukan ekstraksi fitur kita bisa mendapat masukan dari kamus atau korpus dan semacamnya untuk membantu kita melakukan ekstraksi fitur  ==  [1056 frames] -81.5116 [Ac=-86076.3 LM=0.0] (Act=24.2)
+Aligning File: res/wav/13516130_083.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+setelah fitur sudah diekstraksi maka keluaran dari ekstraksi fitur akan diklasifikasi sentimennya  ==  [666 frames] -80.8311 [Ac=-53833.5 LM=0.0] (Act=20.5)
+Aligning File: res/wav/13516130_084.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah klasifikasi sentimen ini bisa menggunakan model atau aturan  ==  [396 frames] -81.4218 [Ac=-32243.0 LM=0.0] (Act=20.2)
+Aligning File: res/wav/13516130_085.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+nanti setelah dilakukan klasifikasi sentimen maka kita akan mendapatkan keluaran nilai sentimen tersebut apakah nilainya positif apakah nilainya negatif atau netral  ==  [1096 frames] -80.2069 [Ac=-87906.7 LM=0.0] (Act=23.6)
+Aligning File: res/wav/13516130_086.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+yang harus diperhatikan adalah bahwa dalam ekstraksi fitur akan ada perhitungan terhadap kata negasi  ==  [595 frames] -82.8607 [Ac=-49302.1 LM=0.0] (Act=20.9)
+Aligning File: res/wav/13516130_087.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+nah hal ini dapat dilakukan menggunakan word window atau informasi sintaksis  ==  [579 frames] -80.3844 [Ac=-46542.6 LM=0.0] (Act=20.7)
+Aligning File: res/wav/13516130_088.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+lalu dari sumber-sumber tersebut bisa ada pengetahuan berupa atribut dari sebuah objek dan nilai-nilai yang mungkin pada atribut tersebut  ==  [942 frames] -80.4077 [Ac=-75744.0 LM=0.0] (Act=22.7)
+Aligning File: res/wav/13516130_089.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+contoh-contoh fitur dari sentimen analisis itu untuk unigram itu bisa menggunakan bag of words jadi kumpulan-kumpulan kata yang tidak perlu berurutan  ==  [991 frames] -81.3765 [Ac=-80644.1 LM=0.0] (Act=19.6)
+Aligning File: res/wav/13516130_090.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+selain itu bisa juga bigram jadi kumpulan dua kata  ==  [343 frames] -81.8604 [Ac=-28078.1 LM=0.0] (Act=23.1)
+Aligning File: res/wav/13516130_091.mfc
+Created lattice with 34 nodes / 33 arcs from label file
+contohnya kalo untuk unigram adalah pemerintah koma makin koma hebat koma ambil dan seterusnya untuk bigram itu kumpulan dua kata yaitu pemerintah makin koma makin hebat koma hebat ambil koma ambil mentri dan seterusnya  ==  [1864 frames] -78.2184 [Ac=-145799.0 LM=0.0] (Act=23.8)
+Aligning File: res/wav/13516130_092.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+lalu bisa juga digunakan daftar kata  ==  [295 frames] -80.3264 [Ac=-23696.3 LM=0.0] (Act=18.3)
+Aligning File: res/wav/13516130_093.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+nah terakhir ini kita akan membahas summarization opini atau kesimpulan dari opini  ==  [710 frames] -79.4330 [Ac=-56397.4 LM=0.0] (Act=23.3)
+Aligning File: res/wav/13516130_094.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+jadi yang pertama kita akan melakukan feature identification sama seperti arsitektur umum sentimen analisis  ==  [790 frames] -81.2756 [Ac=-64207.7 LM=0.0] (Act=21.3)
+Aligning File: res/wav/13516130_095.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+jadi kita misalnya menghasilkan aspek kualitas baterai aspek kualitas suara aspek kemudahan penggunaan dan semacamnya  ==  [1048 frames] -79.8895 [Ac=-83724.1 LM=0.0] (Act=23.4)
+Aligning File: res/wav/13516130_096.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+lalu yang kedua kita melakukan prediksi dari sentimen tersebut  ==  [443 frames] -80.2931 [Ac=-35569.8 LM=0.0] (Act=18.8)
+Aligning File: res/wav/13516130_097.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+jadi apakah aspek kualitas baterai itu bagus apakah aspek kualitas suara itu bagus dan semacamnya  ==  [782 frames] -80.8751 [Ac=-63244.4 LM=0.0] (Act=23.0)
+Aligning File: res/wav/13516130_098.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+setelah itu kita menyimpulkan untuk tiap aspek  ==  [376 frames] -81.6458 [Ac=-30698.8 LM=0.0] (Act=22.5)
+Aligning File: res/wav/13516130_099.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+misalnya aspek baterai itu bagus dan aspek kualitas itu lebih bagus seperti itu  ==  [698 frames] -78.6224 [Ac=-54878.4 LM=0.0] (Act=18.8)
+Aligning File: res/wav/13516130_100.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+sekian untuk materi sentimen analisis hari ini  ==  [643 frames] -73.2532 [Ac=-47101.8 LM=0.0] (Act=18.0)
+Aligning File: res/wav/13516133_001.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+selamat pagi teman-teman  ==  [166 frames] -78.6939 [Ac=-13063.2 LM=0.0] (Act=20.4)
+Aligning File: res/wav/13516133_002.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+untuk minggu ini kita akan mempelajari image enhancement  ==  [350 frames] -78.7115 [Ac=-27549.0 LM=0.0] (Act=31.5)
+Aligning File: res/wav/13516133_003.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+nah pertama apa itu image enhancement  ==  [292 frames] -77.1918 [Ac=-22540.0 LM=0.0] (Act=24.1)
+Aligning File: res/wav/13516133_004.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+image enhancement adalah perbaikan kualitas citra  ==  [378 frames] -76.7398 [Ac=-29007.7 LM=0.0] (Act=48.8)
+Aligning File: res/wav/13516133_005.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+tujuannya adalah untuk memperoleh citra yang lebih sesuai digunakan untuk aplikasi lebih lanjut  ==  [630 frames] -77.7733 [Ac=-48997.2 LM=0.0] (Act=68.8)
+Aligning File: res/wav/13516133_006.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+contohnya kita ingin mengenali objek di dalam citra  ==  [337 frames] -76.0576 [Ac=-25631.4 LM=0.0] (Act=40.8)
+Aligning File: res/wav/13516133_007.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+image enhancement adalah satu proses awal dalam pengolahan citra  ==  [440 frames] -77.7966 [Ac=-34230.5 LM=0.0] (Act=55.1)
+Aligning File: res/wav/13516133_008.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+mengapa kita memerlukan image enhancement  ==  [293 frames] -77.6460 [Ac=-22750.3 LM=0.0] (Act=24.5)
+Aligning File: res/wav/13516133_009.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+misalnya citra yang kita dapat mengandung derau atau terlalu terang atau gelap atau mengalami blurring  ==  [817 frames] -72.8580 [Ac=-59525.0 LM=0.0] (Act=65.0)
+Aligning File: res/wav/13516133_010.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_011.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+nah pada gambar kedua bisa kita lihat kontras dari citra ini terlalu gelap  ==  [570 frames] -77.3107 [Ac=-44067.1 LM=0.0] (Act=64.1)
+Aligning File: res/wav/13516133_012.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+kemudian pada gambar ketiga adanya motion blurring yang biasa terjadi pada saat kita mengambil gambar dengan kamera  ==  [767 frames] -77.9076 [Ac=-59755.1 LM=0.0] (Act=43.0)
+Aligning File: res/wav/13516133_013.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_014.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+yang pertama adalah image enhancement dalam ranah spasial yang kedua adalah dalam ranah frekuensi  ==  [716 frames] -76.5006 [Ac=-54774.5 LM=0.0] (Act=62.7)
+Aligning File: res/wav/13516133_015.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+metode-metode image enhancement dalam ranah spasial dilakukan dengan <man> memanipulasi secara langsung pixel-pixel di dalam citra  ==  [930 frames] -78.8066 [Ac=-73290.1 LM=0.0] (Act=85.5)
+Aligning File: res/wav/13516133_016.mfc
+Created lattice with 24 nodes / 23 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+sedangkan untuk dalam ranah frekuensi image tersebut diubah ke ranah frekuensi baru kemudian dimanipulasi nilai-nilai frekuensi tersebut lalu diubah kembali ke dalam ranah spasial  ==  [1485 frames] -76.0741 [Ac=-112970.1 LM=0.0] (Act=104.0)
+Aligning File: res/wav/13516133_017.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+masing-masing ranah operasi ini digunakan untuk tujuan yang spesifik karena tidak semua perbaikan citra dapat dilakukan dalam ranah spasial  ==  [869 frames] -80.3560 [Ac=-69829.4 LM=0.0] (Act=90.1)
+Aligning File: res/wav/13516133_018.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+nah untuk materi minggu ini kita hanya akan membahas metode image enhancement dalam ranah spasial  ==  [688 frames] -77.7204 [Ac=-53471.6 LM=0.0] (Act=82.5)
+Aligning File: res/wav/13516133_019.mfc
+Created lattice with 33 nodes / 32 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+nah misalkan terdapat suatu fungsi x atau x dan y yang merupakan nilai citra input dan ada fungsi g x dan y yang merupakan nilai citra output dan t adalah operator terhadap f  ==  [1735 frames] -76.6416 [Ac=-132973.1 LM=0.0] (Act=83.2)
+Aligning File: res/wav/13516133_020.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+metode <pe> pemrosesan citra dalam ranah spasial dinyatakan sebagai g x y sama dengan t f x y  ==  [1114 frames] -73.3900 [Ac=-81756.4 LM=0.0] (Act=61.3)
+Aligning File: res/wav/13516133_021.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+No tokens survived to final node of network at beam 250.0
+t bisa beroperasi pada satu pixel sekelompok pixel yang bertetangga ataupun keseluruhan pixel di dalam citra  ==  [789 frames] -79.4641 [Ac=-62697.2 LM=0.0] (Act=53.7)
+Aligning File: res/wav/13516133_022.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+jadi metode dalam ranah spasial dapat dilakukan pada aras atau level titik aras lokal dan aras global  ==  [907 frames] -76.6043 [Ac=-69480.1 LM=0.0] (Act=68.4)
+Aligning File: res/wav/13516133_023.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+No tokens survived to final node of network at beam 250.0
+nah ini adalah jenis-jenis image enhancement yang akan kita pelajari  ==  [677 frames] -75.2629 [Ac=-50953.0 LM=0.0] (Act=37.3)
+Aligning File: res/wav/13516133_024.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+nah proses proses yang termasuk ke dalam perbaikan kualitas citra  ==  [484 frames] -76.4427 [Ac=-36998.3 LM=0.0] (Act=56.0)
+Aligning File: res/wav/13516133_025.mfc
+Created lattice with 36 nodes / 35 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_026.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+No tokens survived to final node of network at beam 250.0
+nah untuk pemrosesan dalam aras titik t hanya beroperasi pada satu pixel  ==  [702 frames] -74.0587 [Ac=-51989.2 LM=0.0] (Act=40.4)
+Aligning File: res/wav/13516133_027.mfc
+Created lattice with 35 nodes / 34 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_028.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_029.mfc
+Created lattice with 26 nodes / 25 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_030.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+<ee> rumusnya menjadi r sama dengan s tambah b  ==  [537 frames] -72.9888 [Ac=-39195.0 LM=0.0] (Act=21.0)
+Aligning File: res/wav/13516133_031.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+No tokens survived to final node of network at beam 250.0
+jika b positif kecerahan citra akan bertambah  ==  [373 frames] -77.4900 [Ac=-28903.8 LM=0.0] (Act=37.9)
+Aligning File: res/wav/13516133_032.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+sementara jika b negatif kecerahan citra akan berkurang  ==  [420 frames] -75.8050 [Ac=-31838.1 LM=0.0] (Act=43.2)
+Aligning File: res/wav/13516133_033.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+nah kita memerlukan operasi clipping jika nilai r ditambah b berada di bawah nilai intensitas minimum atau di atas nilai intensitas maksimum  ==  [1099 frames] -76.4620 [Ac=-84031.7 LM=0.0] (Act=86.5)
+Aligning File: res/wav/13516133_034.mfc
+Created lattice with 29 nodes / 28 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_035.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+No tokens survived to final node of network at beam 250.0
+sedangkan jika r ditambah b kecil dari nol maka s sama dengan nol  ==  [613 frames] -74.5137 [Ac=-45676.9 LM=0.0] (Act=49.2)
+Aligning File: res/wav/13516133_036.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+sekarang lihat kedua gambar ini  ==  [209 frames] -77.6176 [Ac=-16222.1 LM=0.0] (Act=30.6)
+Aligning File: res/wav/13516133_037.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+di gambar yang kiri citra zelda ini agak gelap  ==  [407 frames] -73.9278 [Ac=-30088.6 LM=0.0] (Act=29.2)
+Aligning File: res/wav/13516133_038.mfc
+Created lattice with 23 nodes / 22 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+nah kalau kita tambahkan nilai b sama dengan seratus ke dalam citra tersebut maka hasilnya adalah citra zelda di kanan yang lebih terang  ==  [946 frames] -74.7026 [Ac=-70668.6 LM=0.0] (Act=85.3)
+Aligning File: res/wav/13516133_039.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+nah operasi pencerahan yang lain bisa menggunakan rumus r sama dengan a s ditambah b dengan a dan b adalah konstanta  ==  [1101 frames] -74.8850 [Ac=-82448.4 LM=0.0] (Act=92.3)
+Aligning File: res/wav/13516133_040.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+nah yang kedua adalah menegatifkan citra  ==  [344 frames] -75.5239 [Ac=-25980.2 LM=0.0] (Act=27.1)
+Aligning File: res/wav/13516133_041.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+nah negatif citra ini mirip seperti film negatif pada fotografi  ==  [574 frames] -77.0004 [Ac=-44198.2 LM=0.0] (Act=47.9)
+Aligning File: res/wav/13516133_042.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+jadi <nem> pada gambar ini nilai yang berwarna hitam menjadi putih dan pixel yang berwarna putih menjadi hitam  ==  [898 frames] -76.0303 [Ac=-68275.2 LM=0.0] (Act=39.1)
+Aligning File: res/wav/13516133_043.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+misalnya suatu citra memiliki l derajat keabuan  ==  [425 frames] -77.1058 [Ac=-32770.0 LM=0.0] (Act=45.5)
+Aligning File: res/wav/13516133_044.mfc
+Created lattice with 30 nodes / 29 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_045.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+contohnya pada citra grayscale delapan bit rumusnya menjadi s sama dengan dua lima lima dikurang r  ==  [869 frames] -74.4932 [Ac=-64734.6 LM=0.0] (Act=76.1)
+Aligning File: res/wav/13516133_046.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+proses ini bermanfaat bila area hitam sangat dominan di dalam citra misalnya foto sinar x dan citra mammografi  ==  [1044 frames] -75.7047 [Ac=-79035.7 LM=0.0] (Act=90.1)
+Aligning File: res/wav/13516133_047.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+kemudian ada yang namanya perbaikan kontras  ==  [328 frames] -76.3077 [Ac=-25028.9 LM=0.0] (Act=30.1)
+Aligning File: res/wav/13516133_048.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+nah bagaimana perbaikan kontras itu dilakukan  ==  [395 frames] -75.4992 [Ac=-29822.2 LM=0.0] (Act=48.9)
+Aligning File: res/wav/13516133_049.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_050.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+operasi ini disebut sebagai peregangan kontras atau contrast stretching  ==  [639 frames] -77.6399 [Ac=-49611.9 LM=0.0] (Act=26.1)
+Aligning File: res/wav/13516133_051.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+nah ada satu lagi operasi contrast stretching  ==  [507 frames] -76.0533 [Ac=-38559.0 LM=0.0] (Act=23.3)
+Aligning File: res/wav/13516133_052.mfc
+Created lattice with 32 nodes / 31 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+jadi jika nilai-nilai pixel yang lebih kecil dari m dibuat menjadi hitam dan nilai-nilai pixel yang lebih besar sama dengan m dibuat menjadi putih maka operasi ini disebut operasi pengambangan atau thresholding  ==  [1641 frames] -76.6537 [Ac=-125788.8 LM=0.0] (Act=145.2)
+Aligning File: res/wav/13516133_053.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_054.mfc
+Created lattice with 37 nodes / 36 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_055.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+kemudian ada gray level slicing  ==  [283 frames] -76.2822 [Ac=-21587.9 LM=0.0] (Act=19.9)
+Aligning File: res/wav/13516133_056.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+tujuannya adalah untuk menonjolkan atau highlight rentang keabuan tertentu di dalam citra  ==  [738 frames] -73.4110 [Ac=-54177.4 LM=0.0] (Act=62.0)
+Aligning File: res/wav/13516133_057.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_058.mfc
+Created lattice with 32 nodes / 31 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_059.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+ini disebut sebagai discard background  ==  [355 frames] -76.5004 [Ac=-27157.6 LM=0.0] (Act=15.8)
+Aligning File: res/wav/13516133_060.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516133_061.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+metode ini disebut sebagai preserve background  ==  [395 frames] -77.9256 [Ac=-30780.6 LM=0.0] (Act=28.6)
+Aligning File: res/wav/13516133_062.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+kemudian ada bit plane slicing  ==  [292 frames] -75.7232 [Ac=-22111.2 LM=0.0] (Act=19.7)
+Aligning File: res/wav/13516133_063.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+tujuannya adalah menonjolkan kontribusi dari bit tentu di dalam citra  ==  [539 frames] -76.0674 [Ac=-41000.4 LM=0.0] (Act=37.7)
+Aligning File: res/wav/13516133_064.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+misalkan satu pixel terdiri dari delapan bit  ==  [369 frames] -77.3937 [Ac=-28558.3 LM=0.0] (Act=36.9)
+Aligning File: res/wav/13516133_065.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+bit-bit tersebut tersusun dari kiri ke kanan dalam urutan yang kurang berarti hingga bit-bit yang berarti  ==  [806 frames] -76.5562 [Ac=-61704.3 LM=0.0] (Act=44.9)
+Aligning File: res/wav/13516133_066.mfc
+Created lattice with 23 nodes / 22 arcs from label file
+No tokens survived to final node of network at beam 250.0
+susunan bit pada setiap byte menjadi b tujuh b enam b lima b empat b tiga b dua b satu dan b nol  ==  [1113 frames] -72.6343 [Ac=-80841.9 LM=0.0] (Act=65.1)
+Aligning File: res/wav/13516133_067.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+No tokens survived to final node of network at beam 250.0
+jika setiap bit dari setiap pixel diambil maka akan diperoleh delapan buah bidang atau bit plane  ==  [924 frames] -75.5025 [Ac=-69764.3 LM=0.0] (Act=60.8)
+Aligning File: res/wav/13516133_068.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+nah untuk minggu ini sekian dulu  ==  [293 frames] -76.4833 [Ac=-22409.6 LM=0.0] (Act=38.0)
+Aligning File: res/wav/13516133_069.mfc
+Created lattice with 41 nodes / 40 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+<ee> saya akan kasih tugas yaitu buatlah program image enhancement yang mengaplikasikan metode-metode ini yaitu image brightening contrast stretching transformasi log dan inverse log nanti akan saya ajarkan transformasi pangkat akan saya ajarkan juga gray level slicing dan bit plane slicing  ==  [2398 frames] -77.9697 [Ac=-186971.4 LM=0.0] (Act=141.4)
+Aligning File: res/wav/13516133_070.mfc
+Created lattice with 2 nodes / 1 arcs from label file
+selamat siang  ==  [186 frames] -75.4876 [Ac=-14040.7 LM=0.0] (Act=17.3)
+Aligning File: res/wav/13516134_001.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+halo selamat pagi semua  ==  [173 frames] -79.3936 [Ac=-13735.1 LM=0.0] (Act=20.4)
+Aligning File: res/wav/13516134_002.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+jadi hari ini kita akan ngebahas aspek-aspek psikologis  ==  [307 frames] -85.5328 [Ac=-26258.6 LM=0.0] (Act=37.3)
+Aligning File: res/wav/13516134_003.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+nah apa aja sih aspek-aspek psikologis  ==  [291 frames] -85.3887 [Ac=-24848.1 LM=0.0] (Act=26.9)
+Aligning File: res/wav/13516134_004.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jadi yang pertama ada atensi  ==  [161 frames] -87.5282 [Ac=-14092.0 LM=0.0] (Act=24.5)
+Aligning File: res/wav/13516134_005.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+atensi itu merupakan faktor mutlak bagi sesuatu usaha persuasi  ==  [404 frames] -87.7827 [Ac=-35464.2 LM=0.0] (Act=48.7)
+Aligning File: res/wav/13516134_006.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+nah langkah pertama dalam proses persuasi ini adalah atention arousing  ==  [457 frames] -84.8811 [Ac=-38790.6 LM=0.0] (Act=46.6)
+Aligning File: res/wav/13516134_007.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+atensi sendiri punya tiga jenis atau bentuk  ==  [419 frames] -79.3265 [Ac=-33237.8 LM=0.0] (Act=19.0)
+Aligning File: res/wav/13516134_008.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+yang pertama involuntir  ==  [219 frames] -78.5738 [Ac=-17207.7 LM=0.0] (Act=13.9)
+Aligning File: res/wav/13516134_009.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+yang kedua nonvoluntir  ==  [180 frames] -83.5094 [Ac=-15031.7 LM=0.0] (Act=27.0)
+Aligning File: res/wav/13516134_010.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+yang ketiga itu nonvoluntir  ==  [226 frames] -82.5403 [Ac=-18654.1 LM=0.0] (Act=19.6)
+Aligning File: res/wav/13516134_011.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+nah sifat atensi sendiri ada dua  ==  [295 frames] -84.3524 [Ac=-24884.0 LM=0.0] (Act=24.6)
+Aligning File: res/wav/13516134_012.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+yang pertama nonatentif  ==  [143 frames] -83.4172 [Ac=-11928.7 LM=0.0] (Act=19.9)
+Aligning File: res/wav/13516134_013.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+yang kedua inatentif  ==  [248 frames] -81.2099 [Ac=-20140.1 LM=0.0] (Act=13.0)
+Aligning File: res/wav/13516134_014.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+jadi nonatentif ini punya empat bentuk perhatian  ==  [308 frames] -87.5000 [Ac=-26950.0 LM=0.0] (Act=30.1)
+Aligning File: res/wav/13516134_015.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+yang pertama perhatian yang sifatnya serba suka  ==  [324 frames] -83.8592 [Ac=-27170.4 LM=0.0] (Act=21.3)
+Aligning File: res/wav/13516134_016.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+yang kedua pandangan masyarakat seseorang yang sifatnya tidak menyetujui atau tidak senang terhadap yang bersangkutan  ==  [805 frames] -78.8747 [Ac=-63494.2 LM=0.0] (Act=38.8)
+Aligning File: res/wav/13516134_017.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+ketiga itu situasi di mana perhatian seseorang ditarik oleh objek stimulus lain  ==  [660 frames] -84.0393 [Ac=-55465.9 LM=0.0] (Act=36.0)
+Aligning File: res/wav/13516134_018.mfc
+Created lattice with 25 nodes / 24 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+yang keempat adalah perhatian yang menetap dari seseorang atau orang banyak terhadap objek stimulus tertentu sehingga tidak dapat atau sukar tertarik pada objek yang lain  ==  [1077 frames] -82.8039 [Ac=-89179.8 LM=0.0] (Act=111.9)
+Aligning File: res/wav/13516134_019.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+nah usaha-usaha untuk menumbuhkan perhatian itu bisa melalui pengaruh stimulus  ==  [597 frames] -80.1061 [Ac=-47823.3 LM=0.0] (Act=53.2)
+Aligning File: res/wav/13516134_020.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+gimana caranya ya begini  ==  [248 frames] -83.4091 [Ac=-20685.5 LM=0.0] (Act=20.5)
+Aligning File: res/wav/13516134_021.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+pertama objek yang berubah-ubah atau bergerak  ==  [241 frames] -83.8528 [Ac=-20208.5 LM=0.0] (Act=30.5)
+Aligning File: res/wav/13516134_022.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+yang kedua intensitas objek itu  ==  [246 frames] -86.6832 [Ac=-21324.1 LM=0.0] (Act=32.4)
+Aligning File: res/wav/13516134_023.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+yang ketiga pengulangan  ==  [159 frames] -83.4817 [Ac=-13273.6 LM=0.0] (Act=16.6)
+Aligning File: res/wav/13516134_024.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+keempat bentuk objek  ==  [151 frames] -87.1792 [Ac=-13164.1 LM=0.0] (Act=15.0)
+Aligning File: res/wav/13516134_025.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+yang kelima hal baru dan aneh  ==  [251 frames] -82.4760 [Ac=-20701.5 LM=0.0] (Act=24.5)
+Aligning File: res/wav/13516134_026.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+yang terakhir itu hubungan sekoyong-koyong dengan objek itu  ==  [359 frames] -83.0971 [Ac=-29831.9 LM=0.0] (Act=35.5)
+Aligning File: res/wav/13516134_027.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+nah di sini tuh kita perlu tahu kondisi komunikan yang dapat dipergunakan sebagai landasan menumbuhkan perhatian  ==  [696 frames] -84.0259 [Ac=-58482.0 LM=0.0] (Act=74.0)
+Aligning File: res/wav/13516134_028.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+yang pertama itu familiritas dengan objek  ==  [331 frames] -81.1400 [Ac=-26857.3 LM=0.0] (Act=25.2)
+Aligning File: res/wav/13516134_029.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+yang kedua kepentingan  ==  [193 frames] -83.3829 [Ac=-16092.9 LM=0.0] (Act=19.8)
+Aligning File: res/wav/13516134_030.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+ketiga ada hubungan langsung  ==  [197 frames] -81.1365 [Ac=-15983.9 LM=0.0] (Act=15.7)
+Aligning File: res/wav/13516134_031.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+keempat kondisi fisik dalam psikologis komunikan  ==  [267 frames] -88.7201 [Ac=-23688.3 LM=0.0] (Act=25.1)
+Aligning File: res/wav/13516134_032.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+yang ke lima itu feeling  ==  [411 frames] -78.2790 [Ac=-32172.7 LM=0.0] (Act=10.2)
+Aligning File: res/wav/13516134_033.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+dan yang terakhir itu kegiatan komunikan  ==  [207 frames] -86.2443 [Ac=-17852.6 LM=0.0] (Act=38.8)
+Aligning File: res/wav/13516134_034.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+No tokens survived to final node of network at beam 250.0
+interest sendiri itu penting dalam atensi karena interest itu adalah rasa tertarik seseorang atau orang banyak terhadap suatu objek tertentu  ==  [907 frames] -84.6234 [Ac=-76753.4 LM=0.0] (Act=74.7)
+Aligning File: res/wav/13516134_035.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+ada tiga unsur tersirat dalam pengertiannya  ==  [255 frames] -86.5355 [Ac=-22066.6 LM=0.0] (Act=32.0)
+Aligning File: res/wav/13516134_036.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+yang pertama itu seseorang atau orang banyak yang punya rasa tertarik itu  ==  [473 frames] -83.4812 [Ac=-39486.6 LM=0.0] (Act=30.4)
+Aligning File: res/wav/13516134_037.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+yang kedua objek yang menimbulkan rasa tertarik itu  ==  [307 frames] -86.1511 [Ac=-26448.4 LM=0.0] (Act=47.8)
+Aligning File: res/wav/13516134_038.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+No tokens survived to final node of network at beam 250.0
+dan yang terakhir kualitas daya tarik objek tersebut  ==  [286 frames] -84.8136 [Ac=-24256.7 LM=0.0] (Act=50.2)
+Aligning File: res/wav/13516134_039.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+oke selanjutnya itu proses penginderaan  ==  [325 frames] -79.2636 [Ac=-25760.7 LM=0.0] (Act=22.9)
+Aligning File: res/wav/13516134_040.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+jadi tuh sensasi tuh dari mana sih <eee> dirasakan  ==  [364 frames] -80.4429 [Ac=-29281.2 LM=0.0] (Act=37.4)
+Aligning File: res/wav/13516134_041.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+pertama itu kita perlu ada fenomena yang terjadi  ==  [372 frames] -83.5547 [Ac=-31082.4 LM=0.0] (Act=23.8)
+Aligning File: res/wav/13516134_042.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+dari fenomena itu kita akan memproses melalui penginderaan atau bisa dibilang sensorik  ==  [678 frames] -81.6084 [Ac=-55330.5 LM=0.0] (Act=31.0)
+Aligning File: res/wav/13516134_043.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+lalu proses penginderaan ini berkaitan dengan alat-alat indera  ==  [376 frames] -82.8120 [Ac=-31137.3 LM=0.0] (Act=37.6)
+Aligning File: res/wav/13516134_044.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah kita tuh punya apa aja sih alat-alat indera  ==  [252 frames] -82.5219 [Ac=-20795.5 LM=0.0] (Act=28.7)
+Aligning File: res/wav/13516134_045.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+itu kita ada telinga mata kinestesi dan orientansi hidung lidah dan kulit  ==  [826 frames] -80.0700 [Ac=-66137.8 LM=0.0] (Act=25.1)
+Aligning File: res/wav/13516134_046.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+nah jadi kalau ada alurnya kita dapat stimulus  ==  [575 frames] -83.0363 [Ac=-47745.9 LM=0.0] (Act=24.8)
+Aligning File: res/wav/13516134_047.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+stimulus ini dari luar misalnya objek  ==  [222 frames] -89.2458 [Ac=-19812.6 LM=0.0] (Act=26.3)
+Aligning File: res/wav/13516134_048.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+kemudian stimulus ini memberikan kita sensasi  ==  [342 frames] -85.5372 [Ac=-29253.7 LM=0.0] (Act=25.2)
+Aligning File: res/wav/13516134_049.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+kita merasakan sensasi ini melalui alat indera  ==  [256 frames] -85.2228 [Ac=-21817.0 LM=0.0] (Act=29.9)
+Aligning File: res/wav/13516134_050.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+lalu dari sensasi itu kita membentuk persepsi atau permaknaan  ==  [597 frames] -81.2752 [Ac=-48521.3 LM=0.0] (Act=24.4)
+Aligning File: res/wav/13516134_051.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah permaknaan ini <eee> bisa tergantung beberapa hal berikut  ==  [488 frames] -80.3503 [Ac=-39211.0 LM=0.0] (Act=34.0)
+Aligning File: res/wav/13516134_052.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+misalnya hasrat harapan motivasi pengalaman ingatan pengetahuan atau mungkin ada faktor-faktor lain  ==  [916 frames] -79.2075 [Ac=-72554.1 LM=0.0] (Act=25.8)
+Aligning File: res/wav/13516134_053.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+nah dari <e> persepsi itu kita kemudian bisa memberikan respon  ==  [539 frames] -81.6614 [Ac=-44015.5 LM=0.0] (Act=33.5)
+Aligning File: res/wav/13516134_054.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+respon itu bisa bela seperti tindakan atau perilaku  ==  [466 frames] -83.1950 [Ac=-38768.9 LM=0.0] (Act=16.2)
+Aligning File: res/wav/13516134_055.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+nah untuk proses penginderaan itu <ee> tergantung dari alat indera  ==  [821 frames] -76.4582 [Ac=-62772.2 LM=0.0] (Act=22.6)
+Aligning File: res/wav/13516134_056.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+nah itu tuh tahap mendasar banget dari manusia  ==  [457 frames] -77.7326 [Ac=-35523.8 LM=0.0] (Act=38.3)
+Aligning File: res/wav/13516134_057.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+dia tuh menerima stimuli kemudian mengembalikannya lagi kepada lingkungan  ==  [404 frames] -83.9167 [Ac=-33902.4 LM=0.0] (Act=53.5)
+Aligning File: res/wav/13516134_058.mfc
+Created lattice with 26 nodes / 25 arcs from label file
+No tokens survived to final node of network at beam 250.0
+jadi bisa dibilang sensasi itu adalah pengalaman elementer yang segera yang belum memerlukan pengurangan verbal atau simbolis atau konseptual dengan terutama sekali berhubungan dengan alat indera  ==  [1420 frames] -81.1705 [Ac=-115262.1 LM=0.0] (Act=51.0)
+Aligning File: res/wav/13516134_059.mfc
+Created lattice with 23 nodes / 22 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+tapi dalam kehidupan nyata kita jarang hanya mengalami sensasi sederhana yang ditimbulkan stimuli yang melanda indera seperti warna terang nada aroma dan sebagainya  ==  [1237 frames] -82.3763 [Ac=-101899.5 LM=0.0] (Act=114.3)
+Aligning File: res/wav/13516134_060.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+persepsi itu bekerja memodifikasi atau mengintegrasikan sensasi sehingga kita memberikan arti atau makna terhadap apa yang kita alami  ==  [784 frames] -85.5404 [Ac=-67063.7 LM=0.0] (Act=83.6)
+Aligning File: res/wav/13516134_061.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+No tokens survived to final node of network at beam 250.0
+nah alat indera sendiri merupakan saluran yang terdiri dari pertama reseptor  ==  [654 frames] -80.3596 [Ac=-52555.2 LM=0.0] (Act=44.7)
+Aligning File: res/wav/13516134_062.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+reseptor itu adalah sel yang peka terhadap rangsangan  ==  [267 frames] -85.0357 [Ac=-22704.5 LM=0.0] (Act=33.2)
+Aligning File: res/wav/13516134_063.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+kedua serabut saraf  ==  [157 frames] -85.6322 [Ac=-13444.2 LM=0.0] (Act=21.1)
+Aligning File: res/wav/13516134_064.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+No tokens survived to final node of network at beam 250.0
+serabut saraf ini yang meneruskan impuls dari reseptor menuju otak atau sum-sum tulang belakang  ==  [497 frames] -88.3056 [Ac=-43887.9 LM=0.0] (Act=59.7)
+Aligning File: res/wav/13516134_065.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+yang ketiga itu relay stations sebagai area proses dalam otak  ==  [488 frames] -83.8107 [Ac=-40899.6 LM=0.0] (Act=22.1)
+Aligning File: res/wav/13516134_066.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+nah sensasi ini terjeda terjadi ketika saluran indera mengalami stimulasi  ==  [538 frames] -82.5560 [Ac=-44415.1 LM=0.0] (Act=39.9)
+Aligning File: res/wav/13516134_067.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+No tokens survived to final node of network at beam 250.0
+nah reseptor-reseptor indera itu ada apa aja sih  ==  [280 frames] -85.3962 [Ac=-23910.9 LM=0.0] (Act=28.3)
+Aligning File: res/wav/13516134_068.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+yang pertama ada eksteroseptor  ==  [281 frames] -84.6252 [Ac=-23779.7 LM=0.0] (Act=24.9)
+Aligning File: res/wav/13516134_069.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+No tokens survived to final node of network at beam 250.0
+ini tuh reseptor yang menerima atau menangkap informasi dari luar tubuh atau biasa kita kenal sebagai panca indera  ==  [667 frames] -83.0582 [Ac=-55399.8 LM=0.0] (Act=62.0)
+Aligning File: res/wav/13516134_070.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+yang kedua introseptor  ==  [208 frames] -83.6236 [Ac=-17393.7 LM=0.0] (Act=20.0)
+Aligning File: res/wav/13516134_071.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+re itu reseptor yang mengolah informasi dalam tubuh seperti gerakan peristaltik usus pernafasan detak jantung atau tekanan darah  ==  [1096 frames] -80.1506 [Ac=-87845.0 LM=0.0] (Act=81.3)
+Aligning File: res/wav/13516134_072.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+yang ketiga ada proprioseptor  ==  [308 frames] -83.5739 [Ac=-25740.8 LM=0.0] (Act=27.0)
+Aligning File: res/wav/13516134_073.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+ini tuh reseptor yang menangkap informasi orientasi dan gerakan tubuh atau kinestesi  ==  [548 frames] -84.1951 [Ac=-46138.9 LM=0.0] (Act=50.9)
+Aligning File: res/wav/13516134_074.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+nah semua indera ini pasti punya sensitivas  ==  [380 frames] -79.4924 [Ac=-30207.1 LM=0.0] (Act=26.5)
+Aligning File: res/wav/13516134_075.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+dia tuh tergantung terhadap intensitas itu diukur dengan ambang mutlak atau terhadap perubahan intensitas itu tuh diukur dengan perbedaan ambang  ==  [1041 frames] -80.1363 [Ac=-83421.9 LM=0.0] (Act=52.7)
+Aligning File: res/wav/13516134_076.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+nah untuk ambang absolutnya itu bisa kita hitung dengan jumlah energi minimal stimulus yang diperlukan untuk terjadinya deteksi  ==  [1006 frames] -81.0040 [Ac=-81490.1 LM=0.0] (Act=51.3)
+Aligning File: res/wav/13516134_077.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+No tokens survived to final node of network at beam 250.0
+jadi kalau misalnya mau kita ngebahas ini dari sisi biologis dan psikologis  ==  [467 frames] -82.8119 [Ac=-38673.2 LM=0.0] (Act=49.6)
+Aligning File: res/wav/13516134_078.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+No tokens survived to final node of network at beam 250.0
+sensasi itu kalau dari sisi biologis adalah proses sensorik berkaitan dengan organ indera  ==  [546 frames] -86.3641 [Ac=-47154.8 LM=0.0] (Act=56.3)
+Aligning File: res/wav/13516134_079.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+No tokens survived to final node of network at beam 250.0
+sedangkan kalau psikologis itu sensasi itu adalah pengalaman yang ditimbulkan stimuli sederhana  ==  [611 frames] -83.6923 [Ac=-51136.0 LM=0.0] (Act=47.2)
+Aligning File: res/wav/13516134_080.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+No tokens survived to final node of network at beam 250.0
+nah untuk persepsi sendiri dari biologis kita bisa ngelihat itu tuh sebagai proses perseptual berkaitan dengan sistem saraf tingkat tinggi  ==  [963 frames] -83.4872 [Ac=-80398.1 LM=0.0] (Act=79.5)
+Aligning File: res/wav/13516134_081.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+sedangkan dari sisi psikologis persepsi itu sebagai hasil integrasi atau modifikasi dari sensasi  ==  [868 frames] -80.3448 [Ac=-69739.3 LM=0.0] (Act=27.3)
+Aligning File: res/wav/13516134_082.mfc
+Created lattice with 37 nodes / 36 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+nah untuk penginderaan visual sendiri dalam desain komvis atau interior termasuk arsitektur indera mata atau visual menempati posisi yang paling vital karena sebagian besar karya-karya desain atau karya arsitektural merupakan objek yang memberi sensasi langsung pada mata  ==  [1892 frames] -83.0491 [Ac=-157129.0 LM=0.0] (Act=180.4)
+Aligning File: res/wav/13516134_083.mfc
+Created lattice with 41 nodes / 40 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+kemudian pengalaman visual itu akan semakin bernilai ketika mendapatkan sensasi lain yang ditimbulkan dari misalnya tekstur bahan pelapis kursi desiran angin atau gemercik air di taman aroma wewangian bunga yang tercium dari jambangan sehingga membuat hati merasa makin nyaman dan senang  ==  [1991 frames] -81.9484 [Ac=-163159.3 LM=0.0] (Act=166.8)
+Aligning File: res/wav/13516134_084.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+lalu kenapa meng demikian gitu  ==  [237 frames] -82.6701 [Ac=-19592.8 LM=0.0] (Act=32.4)
+Aligning File: res/wav/13516134_085.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+sistem ini sistem indera ini sekaligus memiliki kemampuan untuk saling bekerja sama atau berintegrasi  ==  [728 frames] -84.4976 [Ac=-61514.2 LM=0.0] (Act=72.5)
+Aligning File: res/wav/13516134_086.mfc
+Created lattice with 26 nodes / 25 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+hal ini dikenal sebagai istilah sinestesi atau di mana pengalaman atau fenomena sensasi dapat ditimbulkan atas hasil integrasi berbagai indera yang memberikan secara serempak atau stimulan  ==  [1301 frames] -85.6274 [Ac=-111401.2 LM=0.0] (Act=121.4)
+Aligning File: res/wav/13516134_087.mfc
+Created lattice with 24 nodes / 23 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+nah untuk mekanisme kerja alat indera sendiri pertama itu dia ada energi fisik dalam dunia sekitar kita yang berubah menjadi aktivitas pada sistem saraf  ==  [1132 frames] -82.3477 [Ac=-93217.6 LM=0.0] (Act=90.9)
+Aligning File: res/wav/13516134_088.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+kemudian proses majuk suknya energi fisik ke dalam aktivitas sistem saraf disebut transduksi  ==  [726 frames] -83.5733 [Ac=-60674.2 LM=0.0] (Act=36.8)
+Aligning File: res/wav/13516134_089.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+transduksi terjadi pada sel reseptor kemudian dikonversi dari energi  ==  [568 frames] -80.2960 [Ac=-45608.1 LM=0.0] (Act=23.8)
+Aligning File: res/wav/13516136_001.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+No tokens survived to final node of network at beam 250.0
+ya selamat pagi semua jadi hari ini kita akan belajar satu lagi algoritma baru  ==  [621 frames] -87.9142 [Ac=-54594.7 LM=0.0] (Act=28.0)
+Aligning File: res/wav/13516136_002.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+nah jika sebelumnya kita sudah belajar apa itu algoritma kali ini kita belajar satu lagi jenis algoritma yaitu namanya algoritma greedy  ==  [1033 frames] -88.7146 [Ac=-91642.2 LM=0.0] (Act=22.6)
+Aligning File: res/wav/13516136_003.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+nah ini kan ya sesuai dengan pelajaran kita if2211 strategi algoritma  ==  [772 frames] -85.7780 [Ac=-66220.6 LM=0.0] (Act=17.7)
+Aligning File: res/wav/13516136_004.mfc
+Created lattice with 35 nodes / 34 arcs from label file
+nah disini teman-teman bisa lihat bahwa sebenarnya algoritma greedy itu adalah merupakan metode yang paling populer untuk memecahkan persoalan optimasi karena memang selain mudah dalam diaplikasikan ya algoritma greedy ini memang cepat dalam hal komputasi  ==  [1994 frames] -86.5477 [Ac=-172576.1 LM=0.0] (Act=20.6)
+Aligning File: res/wav/13516136_005.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+nah cuman permasalahannya selalu di bagian optimasi dimana bagaimana caranya mencari solusi yang paling optimum  ==  [888 frames] -87.7905 [Ac=-77958.0 LM=0.0] (Act=17.2)
+Aligning File: res/wav/13516136_006.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+nah biasanya ada dua macam persoalan optimasi ini bagaimana memaksimasi dan bagaimana meminimasi  ==  [950 frames] -86.8257 [Ac=-82484.4 LM=0.0] (Act=16.9)
+Aligning File: res/wav/13516136_007.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+nah contoh persoalan optimasi yang dimaksud disini contohnya satu itu persoalan penukaran uang  ==  [636 frames] -86.6281 [Ac=-55095.5 LM=0.0] (Act=18.7)
+Aligning File: res/wav/13516136_008.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+misalnya diberikan uang senilai a tukar a dengan koin-koin uang yang ada berapa jumlah minimum koin yang diperlukan untuk penukaran tersebut  ==  [1124 frames] -87.1025 [Ac=-97903.2 LM=0.0] (Act=22.2)
+Aligning File: res/wav/13516136_009.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+nah ini kan persoalan minimasi nih  ==  [331 frames] -84.8033 [Ac=-28069.9 LM=0.0] (Act=16.1)
+Aligning File: res/wav/13516136_010.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+nah ini cocok untuk <dila> dikerjakan diselesaikan dengan pendekatan algoritma greedy  ==  [590 frames] -88.0947 [Ac=-51975.9 LM=0.0] (Act=19.1)
+Aligning File: res/wav/13516136_011.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+nah contoh satunya ini <tsedia> banyak koinnya itu satu lima sepuluh dua lima  ==  [801 frames] -85.3761 [Ac=-68386.3 LM=0.0] (Act=18.8)
+Aligning File: res/wav/13516136_012.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+terus uangnya senilai tiga puluh dua  ==  [346 frames] -83.7260 [Ac=-28969.2 LM=0.0] (Act=13.9)
+Aligning File: res/wav/13516136_013.mfc
+Created lattice with 31 nodes / 30 arcs from label file
+nah dapat ditukar banyak cara seperti ya misalnya tiga puluh dua koin satu atau tujuh koin lima <ek> tujuh koin yang empatnya itu koin lima satu koin sepuluh dua koin satu  ==  [1673 frames] -85.0279 [Ac=-142251.6 LM=0.0] (Act=22.7)
+Aligning File: res/wav/13516136_014.mfc
+Created lattice with 25 nodes / 24 arcs from label file
+bisa juga lima koin dengan tiga koin sepuluh dua koin satu dan paling minimum empat koin dua lima satu lima satu sama dua koin satu  ==  [1399 frames] -85.7855 [Ac=-120013.9 LM=0.0] (Act=20.6)
+Aligning File: res/wav/13516136_015.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+nah contoh-contoh seperti inilah yang yang dapat dengan baik diselesaikan dengan <al> pendekatan algoritma greedy  ==  [801 frames] -86.5528 [Ac=-69328.8 LM=0.0] (Act=19.9)
+Aligning File: res/wav/13516136_016.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+nah sekarang kita belajar prinsipnya dulu  ==  [328 frames] -84.2515 [Ac=-27634.5 LM=0.0] (Act=15.5)
+Aligning File: res/wav/13516136_017.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah greedy itu sendiri artinya adalah rakus tamak loba  ==  [462 frames] -89.6648 [Ac=-41425.1 LM=0.0] (Act=16.2)
+Aligning File: res/wav/13516136_018.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+nah jadi sebenarnya prinsip dari algoritma greedy ini take what you can get now atau ambil yang bisa kamu dapatkan sekarang  ==  [846 frames] -89.9116 [Ac=-76065.2 LM=0.0] (Act=22.9)
+Aligning File: res/wav/13516136_019.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah algoritma greedy ini membentuk solusi langkah per langkah  ==  [416 frames] -90.7864 [Ac=-37767.2 LM=0.0] (Act=18.3)
+Aligning File: res/wav/13516136_020.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+di setiap langkahnya itu terdapat banyak pilihan yang perlu dievaluasi  ==  [480 frames] -90.0240 [Ac=-43211.5 LM=0.0] (Act=20.4)
+Aligning File: res/wav/13516136_021.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+oleh karena itu pada setiap langkah harus dibuat keputusan yang terbaik dalam menentukan pilihan  ==  [682 frames] -89.7460 [Ac=-61206.8 LM=0.0] (Act=17.5)
+Aligning File: res/wav/13516136_022.mfc
+Created lattice with 28 nodes / 27 arcs from label file
+<nahm> di di disetiap langkah itu ketika kita membuat pilihan yang diambil sebenarnya adalah langkah yang optimum lokal yang mana yang dianggap paling baik pada detik itu juga  ==  [1164 frames] -87.6230 [Ac=-101993.2 LM=0.0] (Act=22.3)
+Aligning File: res/wav/13516136_023.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+dengan harapan sebenarnya bahwa langkah tersebut mengarah ke solusi optimum global  ==  [663 frames] -87.5857 [Ac=-58069.3 LM=0.0] (Act=16.2)
+Aligning File: res/wav/13516136_024.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+walaupun ya di dalam algoritma greedy ini tidak ada jaminan  ==  [547 frames] -81.9992 [Ac=-44853.5 LM=0.0] (Act=18.3)
+Aligning File: res/wav/13516136_025.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+nah algoritma greedy dalam memecahkan masalah itu per langkah-langkahnya seperti ini kira-kira  ==  [657 frames] -86.4310 [Ac=-56785.1 LM=0.0] (Act=18.1)
+Aligning File: res/wav/13516136_026.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+<dis> <yak> pertama pada setiap langkah mengambil pilihan yang terbaik yang dapat diperoleh pada saat itu tanpa memperhatikan konsekuensi ke depan  ==  [917 frames] -88.2490 [Ac=-80924.3 LM=0.0] (Act=20.9)
+Aligning File: res/wav/13516136_027.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+yang kedua terus berharap bahwa dengan memilih optimum lokal pada setiap langkah akan berakhir dengan optimum global  ==  [904 frames] -86.8110 [Ac=-78477.2 LM=0.0] (Act=27.2)
+Aligning File: res/wav/13516136_028.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+kira-kira seperti itu ringkasnya  ==  [209 frames] -86.5261 [Ac=-18083.9 LM=0.0] (Act=15.6)
+Aligning File: res/wav/13516136_029.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah kita tinjau sekarang masalah yang tadi penukaran uang  ==  [441 frames] -85.1507 [Ac=-37551.5 LM=0.0] (Act=18.1)
+Aligning File: res/wav/13516136_030.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+nah strategi greedy berarti apa  ==  [227 frames] -87.1567 [Ac=-19784.6 LM=0.0] (Act=16.6)
+Aligning File: res/wav/13516136_031.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+pada setiap langkah pilihlah koin dengan nilai terbesar dari himpunan koin yang tersisa  ==  [587 frames] -88.2496 [Ac=-51802.5 LM=0.0] (Act=17.4)
+Aligning File: res/wav/13516136_032.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+misal a tiga dua koin yang tersedia satu lima sepuluh dan dua lima  ==  [532 frames] -87.4182 [Ac=-46506.5 LM=0.0] (Act=20.3)
+Aligning File: res/wav/13516136_033.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+langkah satu berarti yang dipilih adalah dua lima  ==  [318 frames] -83.7291 [Ac=-26625.9 LM=0.0] (Act=17.4)
+Aligning File: res/wav/13516136_034.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+terus angka kedua karena sisanya dah tinggal tujuh belas maka yang diambil satu buah  ==  [608 frames] -82.8786 [Ac=-50390.2 LM=0.0] (Act=23.0)
+Aligning File: res/wav/13516136_035.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+langkah keduanya nah <eumm> ya mungkin saya kurang paham yang di bagian ini jadi kita lanjutkan saja  ==  [932 frames] -82.1750 [Ac=-76587.1 LM=0.0] (Act=20.6)
+Aligning File: res/wav/13516136_036.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+nah jadi elemen-elemen algoritma greedy itu sendiri ada lima  ==  [447 frames] -85.8398 [Ac=-38370.4 LM=0.0] (Act=24.3)
+Aligning File: res/wav/13516136_037.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+yang pertama itu ada namanya himpunan kandidat biasanya disingkat dengan c  ==  [556 frames] -87.4683 [Ac=-48632.4 LM=0.0] (Act=20.7)
+Aligning File: res/wav/13516136_038.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+terus yang kedua adalah himpunan solusi yang disebut sebagai s  ==  [526 frames] -84.4959 [Ac=-44444.9 LM=0.0] (Act=19.7)
+Aligning File: res/wav/13516136_039.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+terus ada juga fungsi seleksi  ==  [212 frames] -85.1217 [Ac=-18045.8 LM=0.0] (Act=18.1)
+Aligning File: res/wav/13516136_040.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+ada juga fungsi kelayakan  ==  [206 frames] -85.9584 [Ac=-17707.4 LM=0.0] (Act=16.6)
+Aligning File: res/wav/13516136_041.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+ada juga fungsi objektif  ==  [221 frames] -86.9056 [Ac=-19206.1 LM=0.0] (Act=13.5)
+Aligning File: res/wav/13516136_042.mfc
+Created lattice with 36 nodes / 35 arcs from label file
+dengan kata lain algoritma greedy melibatkan pencarian sebuah himpunan bagian s dari himpunan kandidat c yang dalam hal ini s harus memenuhi beberapa kriteria yang ditentukan yaitu menyatakan suatu solusi dan s dioptimasi oleh fungsi objektif  ==  [1979 frames] -86.0526 [Ac=-170298.2 LM=0.0] (Act=24.0)
+Aligning File: res/wav/13516136_043.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+nah pada masalah penukaran uang himpunan kandidatnya sendiri adalah himpunan koin yang merepresentasikan nilai satu lima sepuluh dua lima  ==  [1277 frames] -86.3145 [Ac=-110223.6 LM=0.0] (Act=19.9)
+Aligning File: res/wav/13516136_044.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+paling sedikit mengandung satu koin untuk setiap nilai  ==  [389 frames] -89.0008 [Ac=-34621.3 LM=0.0] (Act=15.6)
+Aligning File: res/wav/13516136_045.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+sedangkan himpunan solusinya itu total nilai koin yang dipilih tepat sama jumlahnya <dengen> dengan nilai uang yang ditukarkan  ==  [837 frames] -86.6224 [Ac=-72503.0 LM=0.0] (Act=20.4)
+Aligning File: res/wav/13516136_046.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+terus fungsi seleksinya pilihlah koin yang bernilai tertinggi dari himpunan kandidat yang tersisa  ==  [679 frames] -85.6079 [Ac=-58127.8 LM=0.0] (Act=22.5)
+Aligning File: res/wav/13516136_047.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+terus fungsi layaknya memerika apakah nilai total dari himpunan koin yang terpilih terpilih dipilih tidak melebihi jumlah uang yang harus dibayar  ==  [1332 frames] -85.6701 [Ac=-114112.6 LM=0.0] (Act=28.1)
+Aligning File: res/wav/13516136_048.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+terus fungsi objektifnya kapan harus selesainya tadi  ==  [450 frames] -85.0465 [Ac=-38270.9 LM=0.0] (Act=12.9)
+Aligning File: res/wav/13516136_049.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+ya ketika jumlah koin yang digunakan adalah minimum  ==  [416 frames] -83.4101 [Ac=-34698.6 LM=0.0] (Act=23.3)
+Aligning File: res/wav/13516136_050.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+nah di dalam <fung> dalam algoritma greedy ini sendiri ya terdapat optimum global itu belum tentu merupakan solusi optimum  ==  [779 frames] -85.7883 [Ac=-66829.1 LM=0.0] (Act=25.3)
+Aligning File: res/wav/13516136_051.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+tetapi sub optimum atau pseudo optimum  ==  [328 frames] -85.8414 [Ac=-28156.0 LM=0.0] (Act=16.8)
+Aligning File: res/wav/13516136_052.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+alasannya algoritma greedy tidak beroperasi secara menyeluruh terhadap semua alternatif solusi yang ada  ==  [572 frames] -90.2423 [Ac=-51618.6 LM=0.0] (Act=25.2)
+Aligning File: res/wav/13516136_053.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+No tokens survived to final node of network at beam 250.0
+sebagaimana pada ya algoritma yang sebelumnya yang kita pelajari yang itu exhaustive search dan terdapat beberapa fungsi seleksi yang berbeda  ==  [944 frames] -85.4972 [Ac=-80709.4 LM=0.0] (Act=38.2)
+Aligning File: res/wav/13516136_054.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+sehingga ya kita harus memilih fungsi yang tepat jika kita ingin algoritma ini menghasilkan solusi yang optimal  ==  [685 frames] -87.9897 [Ac=-60272.9 LM=0.0] (Act=30.6)
+Aligning File: res/wav/13516136_055.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+jadi sebenarnya pada sebagian besar masalah algoritma greedy tidak selalu berhasil memberikan solusi yang optimal  ==  [828 frames] -84.1801 [Ac=-69701.1 LM=0.0] (Act=17.2)
+Aligning File: res/wav/13516136_056.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+nah jadi seperti itu  ==  [236 frames] -80.6314 [Ac=-19029.0 LM=0.0] (Act=10.9)
+Aligning File: res/wav/13516136_057.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+nah persoalannya berbeda lagi  ==  [264 frames] -82.3338 [Ac=-21736.1 LM=0.0] (Act=12.9)
+Aligning File: res/wav/13516136_058.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+contohnya kalau di mata uang dollar amerika serikat atau euro eropa atau crown swedia  ==  [587 frames] -87.3773 [Ac=-51290.4 LM=0.0] (Act=25.0)
+Aligning File: res/wav/13516136_059.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+algoritma greedy selalu memberikan solusi optimum  ==  [428 frames] -82.4470 [Ac=-35287.3 LM=0.0] (Act=19.7)
+Aligning File: res/wav/13516136_060.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+contoh enam koma tiga sembilan ditukar dengan uang kertas dan koin sen  ==  [642 frames] -85.9716 [Ac=-55193.8 LM=0.0] (Act=15.9)
+Aligning File: res/wav/13516136_061.mfc
+Created lattice with 33 nodes / 32 arcs from label file
+kita dapat memilih ya <le> <se> <sa> satu buah uang kertas lima satu buah uang kertas senilai satu dollar satu koin dua puluh lima sen satu koin sepuluh sen empat koin satu sen  ==  [1371 frames] -87.3111 [Ac=-119703.6 LM=0.0] (Act=23.7)
+Aligning File: res/wav/13516136_062.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+nah kenapa ini bisa selalu tepat karena ya memang ada sen disana  ==  [639 frames] -85.3526 [Ac=-54540.3 LM=0.0] (Act=25.5)
+Aligning File: res/wav/13516136_063.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+jadi relatif lebih bisa diselesaikan dengan algoritma greedy persoalan-persoalan penukaran mata uangnya  ==  [639 frames] -80.9180 [Ac=-51706.6 LM=0.0] (Act=23.1)
+Aligning File: res/wav/13516136_064.mfc
+Created lattice with 30 nodes / 29 arcs from label file
+nah tapi sebenarnya jika jawaban terbaik mutlak <ti> tidak diperlukan maka algoritma greedy bisa dipakai menjadi <eum> opsi yang utama karena bisa menghasilkan solusi hampiran yang <mendeka> yang cukup mendekati  ==  [1545 frames] -87.5163 [Ac=-135212.7 LM=0.0] (Act=24.5)
+Aligning File: res/wav/13516136_065.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+No tokens survived to final node of network at beam 250.0
+ya daripada menggunakan algoritma yang lebih rumit untuk menghasilkan solusi yang eksak itu kan relatif membutuhkan waktu yang banyak  ==  [730 frames] -90.0375 [Ac=-65727.4 LM=0.0] (Act=66.4)
+Aligning File: res/wav/13516136_066.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+sedangkan kalo algoritma greedy terkadang bisa juga optimum tapi setidaknya ada hampiran mendekati solusi yang optimum  ==  [642 frames] -87.5600 [Ac=-56213.5 LM=0.0] (Act=24.8)
+Aligning File: res/wav/13516136_067.mfc
+Created lattice with 23 nodes / 22 arcs from label file
+nah sebenarnya <eum> agar pemilihan koin berikutnya optimum sebenarnya untuk masalah tadi himpunan koin dalam urutannya menurun bisa diselesaikan dengan cara yang lain  ==  [1142 frames] -85.7858 [Ac=-97967.4 LM=0.0] (Act=25.3)
+Aligning File: res/wav/13516136_068.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+No tokens survived to final node of network at beam 250.0
+nah tapi kali ini kita akan bahas yang lainnya saja  ==  [331 frames] -84.1115 [Ac=-27840.9 LM=0.0] (Act=25.9)
+Aligning File: res/wav/13516136_069.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+nah disini ada persoalan terakhir kita mau bahas tentang integer knapsack yang sudah dijelaskan di minggu yang sebelumnya  ==  [706 frames] -85.9570 [Ac=-60685.6 LM=0.0] (Act=32.7)
+Aligning File: res/wav/13516136_070.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+nah persoalannya disini kalau ini diselesaikan dengan <eum> pendekatan algoritma greedy caranya berarti masukkan objek satu per satu ke dalam knapsack  ==  [1036 frames] -86.7080 [Ac=-89829.5 LM=0.0] (Act=20.9)
+Aligning File: res/wav/13516136_071.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+sekali objek dimasukkan ke dalam knapsack objek tersebut tidak bisa dikeluarkan lagi  ==  [483 frames] -88.5630 [Ac=-42775.9 LM=0.0] (Act=32.1)
+Aligning File: res/wav/13516136_072.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+nah terdapat beberapa strategi greedy yang heuristik yang dapat digunakan untuk memilih objek yang akan dimasukkan ke dalam knapsack  ==  [685 frames] -86.5515 [Ac=-59287.8 LM=0.0] (Act=27.2)
+Aligning File: res/wav/13516136_073.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+nah pertama greedy by profit  ==  [254 frames] -84.3533 [Ac=-21425.7 LM=0.0] (Act=17.2)
+Aligning File: res/wav/13516136_074.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+disini pada setiap langkah pilih objek yang mempunyai keuntungan terbesar  ==  [498 frames] -86.6809 [Ac=-43167.1 LM=0.0] (Act=16.6)
+Aligning File: res/wav/13516136_075.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+<nee> motivasinya yaitu mencoba memaksimumkan keuntungan dengan memilih objek yang paling menguntungkan terlebih dahulu  ==  [779 frames] -83.7418 [Ac=-65234.9 LM=0.0] (Act=17.7)
+Aligning File: res/wav/13516136_076.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+terus bisa greedy by weight pada setiap langkah pilih setiap objek yang mempunyai berat teringan  ==  [770 frames] -83.9655 [Ac=-64653.4 LM=0.0] (Act=25.2)
+Aligning File: res/wav/13516136_077.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+sehingga mencoba memaksimalkan keuntungan dengan memasukkan sebanyak mungkin barang ke dalam knapsack  ==  [624 frames] -87.8885 [Ac=-54842.4 LM=0.0] (Act=19.4)
+Aligning File: res/wav/13516136_078.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+yang ketiga itu greedy by density pada setiap langkah knapsack diisi dengan objek yang mempunyai <eum> berat profit per berat yang terbesar  ==  [1158 frames] -84.6586 [Ac=-98034.7 LM=0.0] (Act=21.9)
+Aligning File: res/wav/13516136_079.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+dengan disini motivasinya mencoba memaksimumkan keuntungan dengan memilih objek yang mempunyai keuntungan per unit berat terbesar  ==  [840 frames] -86.9281 [Ac=-73019.6 LM=0.0] (Act=19.6)
+Aligning File: res/wav/13516136_080.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+nah pemilihan objek ini berdasarkan salah satu dari ketiga strategi diatas tidak menjamin akan memberikan solusi optimal  ==  [746 frames] -86.8178 [Ac=-64766.1 LM=0.0] (Act=22.1)
+Aligning File: res/wav/13516136_081.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+ya terlihat sendiri ya bahwa sebenarnya setiap kasus pasti ada yang akan tidak mencapai optimum globalnya  ==  [627 frames] -87.1369 [Ac=-54634.9 LM=0.0] (Act=23.5)
+Aligning File: res/wav/13516136_082.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+nah kalau penasaran bagaimana contoh kasusnya bisa dilihat seperti di slide  ==  [505 frames] -85.1880 [Ac=-43020.0 LM=0.0] (Act=18.3)
+Aligning File: res/wav/13516136_083.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+No tokens survived to final node of network at beam 250.0
+nah jadi yang bisa disimpulkan disini adalah sebenarnya algoritma greedy tidak akan selalu berhasil menemukan solusi optimal untuk masalah knapsack  ==  [1164 frames] -85.4951 [Ac=-99516.3 LM=0.0] (Act=32.7)
+Aligning File: res/wav/13516136_084.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+tetapi untuk contoh kasus knapsack yang lain yaitu fractional knapsack nah ini bisa  ==  [642 frames] -87.0109 [Ac=-55861.0 LM=0.0] (Act=24.8)
+Aligning File: res/wav/13516136_085.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+nah itu nanti teman-teman boleh cari di internet  ==  [306 frames] -87.0738 [Ac=-26644.6 LM=0.0] (Act=17.1)
+Aligning File: res/wav/13516136_086.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+minggu depan akan dikumpulkan menjadi tugas  ==  [334 frames] -84.2662 [Ac=-28144.9 LM=0.0] (Act=15.3)
+Aligning File: res/wav/13516136_087.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+silahkan cari bagaimana algoritma greedy untuk permasalahan fractional knapsack itu bisa diselesaikan dengan optimum selalu  ==  [1020 frames] -83.0234 [Ac=-84683.8 LM=0.0] (Act=20.6)
+Aligning File: res/wav/13516136_088.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+<yak> jadi demikian kelas kita pada hari ini kelas dibubarkan  ==  [490 frames] -83.1497 [Ac=-40743.3 LM=0.0] (Act=24.5)
+Aligning File: res/wav/13516139_001.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+No tokens survived to final node of network at beam 250.0
+oke selamat siang semua sekarang kita akan melanjutkan materi dari minggu lalu  ==  [352 frames] -97.1320 [Ac=-34190.4 LM=0.0] (Act=53.8)
+Aligning File: res/wav/13516139_002.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+No tokens survived to final node of network at beam 700.0
+No tokens survived to final node of network at beam 850.0
+No tokens survived to final node of network
+Aligning File: res/wav/13516139_003.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+kita ulang sedikit materi pada minggu lalu yaitu tentang desain yang berpusat pada pengguna  ==  [450 frames] -96.4227 [Ac=-43390.2 LM=0.0] (Act=54.1)
+Aligning File: res/wav/13516139_004.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+No tokens survived to final node of network at beam 250.0
+dalam paradigma desain tersebut terdapat beberapa fase yang setidaknya terdapat dalam langkah-langkah pengerjaan yang dilakukan oleh desainer  ==  [716 frames] -96.9654 [Ac=-69427.2 LM=0.0] (Act=65.7)
+Aligning File: res/wav/13516139_005.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+No tokens survived to final node of network at beam 250.0
+langkah pertama desainer harus memahami konteks penggunaan produk  ==  [331 frames] -95.4771 [Ac=-31602.9 LM=0.0] (Act=36.0)
+Aligning File: res/wav/13516139_006.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+hal tersebut dimaksudkan untuk memahami permasalahan ataupun tujuan produk tersebut dibuat  ==  [438 frames] -101.4586 [Ac=-44438.9 LM=0.0] (Act=59.7)
+Aligning File: res/wav/13516139_007.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+No tokens survived to final node of network at beam 250.0
+langkah kedua desainer melakukan riset untuk mencari kebutuhan maupun permasalahan dari sisi pengguna  ==  [526 frames] -96.6923 [Ac=-50860.2 LM=0.0] (Act=61.3)
+Aligning File: res/wav/13516139_008.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+No tokens survived to final node of network at beam 550.0
+riset tersebut dapat dilakukan dengan berbagai macam cara diantaranya adalah dengan wawancara pembuatan kuesioner maupun dengan melakukan pengamatan secara langsung  ==  [890 frames] -94.4199 [Ac=-84033.8 LM=0.0] (Act=93.9)
+Aligning File: res/wav/13516139_009.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+langkah ketiga yaitu proses iterasi pembuatan desain produk  ==  [269 frames] -90.8715 [Ac=-24444.4 LM=0.0] (Act=17.0)
+Aligning File: res/wav/13516139_010.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+No tokens survived to final node of network at beam 250.0
+pada tahap ini dilakukan pembuatan prototipe desain berdasarkan riset dari analisa kebutuhan pengguna dan produk yang sebelumnya telah dilakukan  ==  [819 frames] -90.5435 [Ac=-74155.1 LM=0.0] (Act=35.4)
+Aligning File: res/wav/13516139_011.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+proses desain dilakukan secara iteratif yaitu desainer membuat beberapa versi desain yang kemudian akan dibandingkan satu sama lain  ==  [712 frames] -88.7536 [Ac=-63192.6 LM=0.0] (Act=23.8)
+Aligning File: res/wav/13516139_012.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+hal tersebut berguna untuk mencari beberapa versi desain yang sesuai dengan kebutuhan  ==  [383 frames] -93.2245 [Ac=-35705.0 LM=0.0] (Act=21.4)
+Aligning File: res/wav/13516139_013.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+tahap terakhir adalah proses evaluasi dan perbaikan desain  ==  [309 frames] -85.9629 [Ac=-26562.6 LM=0.0] (Act=22.1)
+Aligning File: res/wav/13516139_014.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+evaluasi dilakukan dengan cara melakukan pengujian produk kepada target pengguna  ==  [358 frames] -92.9391 [Ac=-33272.2 LM=0.0] (Act=23.9)
+Aligning File: res/wav/13516139_015.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+tujuannya adalah untuk mendapatkan timbal balik dari desain produk yang telah dibuat  ==  [333 frames] -90.8460 [Ac=-30251.7 LM=0.0] (Act=26.5)
+Aligning File: res/wav/13516139_016.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+apabila terdapat kesalahan desain desainer selanjutnya akan melakukan perbaikan terhadap desain tersebut  ==  [543 frames] -86.8209 [Ac=-47143.7 LM=0.0] (Act=27.7)
+Aligning File: res/wav/13516139_017.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+keseluruhan proses dilakukan secara iteratif dengan artian bahwa beberapa langkah dapat dilakukan beberapa kali hingga didapat hasil yang diinginkan  ==  [733 frames] -89.8444 [Ac=-65855.9 LM=0.0] (Act=32.7)
+Aligning File: res/wav/13516139_018.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+sekarang kita lanjut ke materi selanjutnya yaitu materi tentang pembuatan prototipe desain  ==  [447 frames] -90.8191 [Ac=-40596.1 LM=0.0] (Act=27.2)
+Aligning File: res/wav/13516139_019.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+secara garis besar prototipe dibagi menjadi tiga jenis  ==  [355 frames] -90.2054 [Ac=-32022.9 LM=0.0] (Act=26.6)
+Aligning File: res/wav/13516139_020.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jenis pertama adalah prototipe wireframe  ==  [216 frames] -89.0357 [Ac=-19231.7 LM=0.0] (Act=20.0)
+Aligning File: res/wav/13516139_021.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jenis kedua adalah prototipe low-fidelity  ==  [266 frames] -89.8641 [Ac=-23903.8 LM=0.0] (Act=17.5)
+Aligning File: res/wav/13516139_022.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jenis ketiga adalah prototipe high-fidelity  ==  [256 frames] -88.6020 [Ac=-22682.1 LM=0.0] (Act=17.4)
+Aligning File: res/wav/13516139_023.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+pertama kita bahas dulu apa itu prototipe wireframe  ==  [287 frames] -90.3176 [Ac=-25921.1 LM=0.0] (Act=19.2)
+Aligning File: res/wav/13516139_024.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+pa pada prototipe jenis ini desain yang dibuat hanyalah kerangka kasar yang menggambarkan tata letak isi konten maupun alur penggunaan  ==  [869 frames] -90.2895 [Ac=-78461.6 LM=0.0] (Act=26.3)
+Aligning File: res/wav/13516139_025.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+No tokens survived to final node of network at beam 250.0
+apabila kamu sering melihat desain aplikasi yang hanya berwarna abu-abu dengan tampilan kasar dan cenderung kosong kemungkinan besar itu adalah prototipe wireframe  ==  [804 frames] -94.7695 [Ac=-76194.7 LM=0.0] (Act=66.6)
+Aligning File: res/wav/13516139_026.mfc
+Created lattice with 27 nodes / 26 arcs from label file
+wireframe dibuat tanpa warna dan hanya menggambarkan kerangka tampilan untuk menghindari bias saat membuat desain sehingga desainer dan calon pengguna hanya berfokus pada fungsionalitas utama produk saja  ==  [1053 frames] -94.4395 [Ac=-99444.7 LM=0.0] (Act=24.7)
+Aligning File: res/wav/13516139_027.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+wireframe juga dibuat secara manual menggunakan tangan dan alat tulis  ==  [321 frames] -91.7868 [Ac=-29463.6 LM=0.0] (Act=31.9)
+Aligning File: res/wav/13516139_028.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+namun seiring waktu wireframe juga dapat dibuat menggunakan perangkat lunak yang tersedia di pasaran  ==  [509 frames] -89.6634 [Ac=-45638.7 LM=0.0] (Act=29.2)
+Aligning File: res/wav/13516139_029.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+No tokens survived to final node of network at beam 250.0
+selanjutnya kita bahas tentang prototipe low-fidelity atau yang sering disingkat sebagai lofi  ==  [401 frames] -97.3023 [Ac=-39018.2 LM=0.0] (Act=46.4)
+Aligning File: res/wav/13516139_030.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+prototipe lofi merupakan bentuk lanjutan dari prototipe wireframe  ==  [293 frames] -93.7979 [Ac=-27482.8 LM=0.0] (Act=30.2)
+Aligning File: res/wav/13516139_031.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+bedanya adalah lofi sudah dalam bentuk prototipe digital dan merupakan versi yang sudah lebih detail dibandingkan wireframe  ==  [610 frames] -92.5735 [Ac=-56469.8 LM=0.0] (Act=26.1)
+Aligning File: res/wav/13516139_032.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+pada fase ini di dapat dilakukan pengujian kepada target pengguna dengan hanya fokus kepada struktur tampilan dan alur penggunaannya saja  ==  [687 frames] -91.2784 [Ac=-62708.3 LM=0.0] (Act=28.5)
+Aligning File: res/wav/13516139_033.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+dalam pembuatannya bisa menggunakan perangkat lunak untuk desain  ==  [312 frames] -88.9099 [Ac=-27739.9 LM=0.0] (Act=20.2)
+Aligning File: res/wav/13516139_034.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+jenis terakhir yang belum kita bahas adalah prototipe high-fidelity atau yang sering disingkat sebagai hifi  ==  [530 frames] -90.5837 [Ac=-48009.4 LM=0.0] (Act=25.1)
+Aligning File: res/wav/13516139_035.mfc
+Created lattice with 24 nodes / 23 arcs from label file
+prototipe hifi merupakan bentuk tertinggi dalam prototipe yang sudah memiliki detail berupa warna contoh konten maupun komponen-komponen kecil yang hanya berfungsi sebagai hiasan saja  ==  [1019 frames] -90.6721 [Ac=-92394.9 LM=0.0] (Act=25.3)
+Aligning File: res/wav/13516139_036.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+prototipe hifi adalah bentuk terdekat yang paling menyerupai produk asli nantinya dengan interaksi yang sudah bisa dicoba oleh target pengguna  ==  [739 frames] -89.7731 [Ac=-66342.3 LM=0.0] (Act=22.1)
+Aligning File: res/wav/13516139_037.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+cara pembuatannya pun bermacam-macam bisa membuat versi desainnya saja dengan perangkat lunak ataupun bisa membuat prototipe langsung dengan bahasa pemrograman apabila memungkinkan  ==  [939 frames] -89.6747 [Ac=-84204.6 LM=0.0] (Act=44.8)
+Aligning File: res/wav/13516139_038.mfc
+Created lattice with 29 nodes / 28 arcs from label file
+cara pertama adalah cara yang paling sering dipakai oleh desainer karena untuk membuat produk secara langsung membutuhkan tenaga dan waktu yang bisa saja tidak sedikit meskipun itu hanya prototipe  ==  [1059 frames] -90.0460 [Ac=-95358.7 LM=0.0] (Act=26.5)
+Aligning File: res/wav/13516139_039.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+dalam membuat prototipe hifi desain harus benar-benar sudah mendekati produk aslinya  ==  [481 frames] -89.4242 [Ac=-43013.0 LM=0.0] (Act=26.5)
+Aligning File: res/wav/13516139_040.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+hal ini dikarenakan desain akan dilakukan pengujian akhir sebelum masuk fase pengembangan produk  ==  [453 frames] -87.5638 [Ac=-39666.4 LM=0.0] (Act=22.3)
+Aligning File: res/wav/13516139_041.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+jadi dari segi warna konten interaksi dan semacamnya harus sudah didesain dengan baik  ==  [503 frames] -86.1134 [Ac=-43315.1 LM=0.0] (Act=17.0)
+Aligning File: res/wav/13516139_042.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+bahkan sebisa mungkin tidak ada konten placeholder  ==  [238 frames] -90.1768 [Ac=-21462.1 LM=0.0] (Act=20.1)
+Aligning File: res/wav/13516139_043.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+nah barusan sudah kita bahas mengenai garis besar jenis-jenis prototipe yang sering dikembangkan dalam pembuatan desain produk  ==  [629 frames] -89.4736 [Ac=-56278.9 LM=0.0] (Act=21.2)
+Aligning File: res/wav/13516139_044.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+ketiga prototipe tersebut hampir bisa dipastikan muncul dalam setiap pengembangan desain jadi ada baiknya bila kalian memahami betul berbagai prototipe tersebut  ==  [856 frames] -91.3215 [Ac=-78171.2 LM=0.0] (Act=23.6)
+Aligning File: res/wav/13516139_045.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+selanjutnya kita akan bahas beberapa aspek penting yang tidak boleh dilewatkan dalam membuat desain prototipe  ==  [487 frames] -93.7142 [Ac=-45638.8 LM=0.0] (Act=29.2)
+Aligning File: res/wav/13516139_046.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+kali ini mungkin kita lebih fokus ke prototipe hifi dulu ya  ==  [272 frames] -91.6150 [Ac=-24919.3 LM=0.0] (Act=22.5)
+Aligning File: res/wav/13516139_047.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+yang pertama adalah warna  ==  [118 frames] -89.4101 [Ac=-10550.4 LM=0.0] (Act=16.4)
+Aligning File: res/wav/13516139_048.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+dalam membuat desain penting untuk mengetahui warna yang cocok dan sesuai dengan kebutuhan pengguna  ==  [472 frames] -92.9584 [Ac=-43876.4 LM=0.0] (Act=31.6)
+Aligning File: res/wav/13516139_049.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+contohnya saja warna merah atau oranye pada restoran warna biru pada desain bank dan lain-lain  ==  [561 frames] -91.7200 [Ac=-51454.9 LM=0.0] (Act=24.3)
+Aligning File: res/wav/13516139_050.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+setiap warna memiliki makna tersendiri dalam desain sehingga desainer tidak bisa sembarangan dalam memilih warna  ==  [579 frames] -88.5028 [Ac=-51243.1 LM=0.0] (Act=23.6)
+Aligning File: res/wav/13516139_051.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+dalam dunia psikologi warna terdapat beberapa aspek yang harus diperhatikan  ==  [422 frames] -87.6483 [Ac=-36987.6 LM=0.0] (Act=22.3)
+Aligning File: res/wav/13516139_052.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+antara lain emosi warna industri yang cocok dan penggunaan dari warna itu sendiri  ==  [505 frames] -86.9915 [Ac=-43930.7 LM=0.0] (Act=19.0)
+Aligning File: res/wav/13516139_053.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+No tokens survived to final node of network at beam 250.0
+contohnya warna merah memunculkan emosi energik perhatian dan semangat  ==  [397 frames] -89.6467 [Ac=-35589.7 LM=0.0] (Act=42.4)
+Aligning File: res/wav/13516139_054.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+maka warna merah sering digunakan dalam industri makanan olahraga hiburan dan sejenisnya  ==  [541 frames] -89.2310 [Ac=-48274.0 LM=0.0] (Act=32.5)
+Aligning File: res/wav/13516139_055.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+No tokens survived to final node of network at beam 250.0
+warna merah yang cenderung terang dan kontras sering dipakai untuk menarik perhatian konsumen agar mau memakai produk tersebut  ==  [526 frames] -96.8142 [Ac=-50924.3 LM=0.0] (Act=46.1)
+Aligning File: res/wav/13516139_056.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+contoh lain adalah warna biru yang melambangkan kejujuran kepercayaan dan tanggung jawab  ==  [469 frames] -89.0856 [Ac=-41781.2 LM=0.0] (Act=23.2)
+Aligning File: res/wav/13516139_057.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+maka dari itu warna biru sering kita temui dalam industri profesional misalnya industri perbankan keuangan kesehatan dan teknologi  ==  [842 frames] -89.7892 [Ac=-75602.5 LM=0.0] (Act=23.7)
+Aligning File: res/wav/13516139_058.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+warna juga bisa berdampak bagi psikologi pengguna misalnya warna biru yang berguna sebagai relaksasi ataupun warna hijau yang menenangkan  ==  [690 frames] -89.8343 [Ac=-61985.7 LM=0.0] (Act=26.2)
+Aligning File: res/wav/13516139_059.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+aspek kedua adalah struktur konten  ==  [176 frames] -90.4516 [Ac=-15919.5 LM=0.0] (Act=27.5)
+Aligning File: res/wav/13516139_060.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+dalam dunia desain terdapat suatu istilah penting yang mendefinisikan struktur konten yang terdapat dalam suatu desain berikut pula aksesibilitas masing-masing bagian  ==  [870 frames] -91.7116 [Ac=-79789.1 LM=0.0] (Act=25.0)
+Aligning File: res/wav/13516139_061.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+struktur tersebut bernama arsitektur informasi  ==  [254 frames] -91.0106 [Ac=-23116.7 LM=0.0] (Act=20.0)
+Aligning File: res/wav/13516139_062.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+arsitektur informasi adalah suatu ilmu yang mengatur susunan konten dalam desain umumnya desain produk digital seperti aplikasi dan sejenisnya  ==  [710 frames] -92.5865 [Ac=-65736.4 LM=0.0] (Act=36.3)
+Aligning File: res/wav/13516139_063.mfc
+Created lattice with 23 nodes / 22 arcs from label file
+arsitektur ini bertujuan untuk mengatur konten dan halaman sehingga pengguna bisa mudah beradaptasi dengan desain tersebut dan memahami alur penggunaan aplikasi dengan baik  ==  [791 frames] -94.3088 [Ac=-74598.3 LM=0.0] (Act=25.2)
+Aligning File: res/wav/13516139_064.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+arsitektur informasi didefinisikan sebagai graf dengan setiap komponen adalah halaman aplikasi yang merupakan titik asal penggunaan ataupun lanjutan dari tampilan sebelumnya  ==  [945 frames] -90.1897 [Ac=-85229.3 LM=0.0] (Act=25.5)
+Aligning File: res/wav/13516139_065.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+untuk mendefinisikan struktur konten desainer perlu mempertimbangkan beberapa aspek  ==  [415 frames] -90.8454 [Ac=-37700.8 LM=0.0] (Act=28.0)
+Aligning File: res/wav/13516139_066.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+misalnya apakah itu aplikasi mobile atau web kemudian target pengguna dan juga tipe produk dan tujuan perusahaan  ==  [655 frames] -87.7207 [Ac=-57457.0 LM=0.0] (Act=23.7)
+Aligning File: res/wav/13516139_067.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+contohnya saja struktur konten pada web blog dan web e-commerce berbeda jauh satu sama lain  ==  [542 frames] -89.2588 [Ac=-48378.3 LM=0.0] (Act=25.3)
+Aligning File: res/wav/13516139_068.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+arsitektur informasi merupakan kerangka utama dari suatu desain umumnya disusun bahkan sejak masih dalam tahap desain wireframe  ==  [666 frames] -89.3987 [Ac=-59539.5 LM=0.0] (Act=20.7)
+Aligning File: res/wav/13516139_069.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+dalam membuat arsitektur terdapat beberapa jenis struktur organisasi konten  ==  [444 frames] -88.6691 [Ac=-39369.1 LM=0.0] (Act=22.6)
+Aligning File: res/wav/13516139_070.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jenis pertama adalah struktur hierarki  ==  [202 frames] -88.4699 [Ac=-17870.9 LM=0.0] (Act=16.1)
+Aligning File: res/wav/13516139_071.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+hierarki visual bertujuan memberi gambaran jelas kepada user bahwa konten pada aplikasi tersusun dengan jelas dan baik  ==  [708 frames] -89.3025 [Ac=-63226.1 LM=0.0] (Act=21.6)
+Aligning File: res/wav/13516139_072.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+pada umumnya desain aplikasi menggunakan struktur konten hierarki karena struktur ini paling mudah dipahami oleh pengguna secara umum  ==  [708 frames] -92.2788 [Ac=-65333.4 LM=0.0] (Act=26.1)
+Aligning File: res/wav/13516139_073.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jenis kedua adalah struktur sekuensial  ==  [223 frames] -89.3633 [Ac=-19928.0 LM=0.0] (Act=18.3)
+Aligning File: res/wav/13516139_074.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+struktur ini memberikan gambaran bahwa konten aplikasi diakses secara berurut dengan langkah tertentu  ==  [457 frames] -93.8800 [Ac=-42903.2 LM=0.0] (Act=25.6)
+Aligning File: res/wav/13516139_075.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+struktur sekuensial umumnya digunakan dalam suatu alur tertentu seperti alur pembelian barang yang terdiri dari pemesanan pembayaran pengiriman dan lain-lain  ==  [943 frames] -89.2715 [Ac=-84183.0 LM=0.0] (Act=34.1)
+Aligning File: res/wav/13516139_076.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+jenis ketiga adalah struktur matriks  ==  [188 frames] -87.5079 [Ac=-16451.5 LM=0.0] (Act=16.5)
+Aligning File: res/wav/13516139_077.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+struktur ini merupakan struktur yang cukup kompleks untuk dipahami karena pengguna diberikan kebebasan untuk mengakses konten manapun tanpa adanya hierarki yang baku  ==  [837 frames] -92.8792 [Ac=-77739.9 LM=0.0] (Act=31.3)
+Aligning File: res/wav/13516139_078.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+contohnya pengguna melakukan navigasi konten yang disusun berdasarkan tanggal topik ataupun kategori tertentu yang dipilih sendiri  ==  [666 frames] -91.5417 [Ac=-60966.8 LM=0.0] (Act=32.9)
+Aligning File: res/wav/13516139_079.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+aspek terakhir adalah ilustrasi dan tulisan  ==  [221 frames] -89.7374 [Ac=-19832.0 LM=0.0] (Act=25.1)
+Aligning File: res/wav/13516139_080.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+penggunaan keduanya penting untuk memberikan kesan ramah dan komunikatif kepada pengguna  ==  [385 frames] -94.4937 [Ac=-36380.1 LM=0.0] (Act=22.5)
+Aligning File: res/wav/13516139_081.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+ilustrasi umum digunakan untuk mendefinisikan branding produk agar lekat dengan pengguna  ==  [368 frames] -96.1878 [Ac=-35397.1 LM=0.0] (Act=26.1)
+Aligning File: res/wav/13516139_082.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+ilustrasi juga berguna untuk memberikan karakter pada desain aplikasi sehingga bisa lebih diingat oleh pengguna  ==  [446 frames] -96.5338 [Ac=-43054.1 LM=0.0] (Act=67.1)
+Aligning File: res/wav/13516139_083.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+untuk pemakaian ilustrasi adalah pada pesan error ataupun status pada aplikasi  ==  [441 frames] -91.2526 [Ac=-40242.4 LM=0.0] (Act=21.1)
+Aligning File: res/wav/13516139_084.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+penggunaan tulisan juga <su> sangat penting untuk diperhatikan karena dengan cara tersebut aplikasi berkomunikasi dengan penggunanya  ==  [655 frames] -93.3485 [Ac=-61143.3 LM=0.0] (Act=25.5)
+Aligning File: res/wav/13516139_085.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+hal yang harus diperhatikan misalnya dengan tidak membuat kalimat terlihat seperti berteriak ataupun penggunaan diksi yang tepat sesuai dengan target penggunanya  ==  [739 frames] -89.9604 [Ac=-66480.8 LM=0.0] (Act=27.5)
+Aligning File: res/wav/13516139_086.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+nah hari ini kita sudah selesai belajar materi tentang desain berpusat pengguna sekaligus materi tentang berbagai macam prototipe  ==  [730 frames] -91.8388 [Ac=-67042.3 LM=0.0] (Act=26.4)
+Aligning File: res/wav/13516139_087.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+tentunya materi ini harus diulang sendiri hingga paham dengan baik  ==  [281 frames] -92.2906 [Ac=-25933.7 LM=0.0] (Act=22.6)
+Aligning File: res/wav/13516139_088.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+dan juga kalian harus sering mencari inspirasi dari internet untuk mengikuti tren desain yang beredar sekarang ini  ==  [591 frames] -89.0283 [Ac=-52615.7 LM=0.0] (Act=22.5)
+Aligning File: res/wav/13516139_089.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+karena cara belajar yang paling ampuh adalah dengan latihan  ==  [239 frames] -90.9044 [Ac=-21726.1 LM=0.0] (Act=31.4)
+Aligning File: res/wav/13516139_090.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+nah agar kalian latihan ini ada tugas kelompok yang harus dikumpulkan dua minggu lagi  ==  [451 frames] -89.0666 [Ac=-40169.0 LM=0.0] (Act=24.0)
+Aligning File: res/wav/13516139_091.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+coba cari materi tambahan di internet agar kalian paham praktiknya seperti apa  ==  [366 frames] -92.6730 [Ac=-33918.3 LM=0.0] (Act=19.0)
+Aligning File: res/wav/13516139_092.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+sekian pertemuan hari ini terima kasih dan selamat siang  ==  [319 frames] -88.1341 [Ac=-28114.8 LM=0.0] (Act=25.9)
+Aligning File: res/wav/13516144_001.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+halo selamat pagi  ==  [239 frames] -79.5503 [Ac=-19012.5 LM=0.0] (Act=12.9)
+Aligning File: res/wav/13516144_002.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+untuk sepuluh menit ke depan saya adalah dosen fisika anda  ==  [555 frames] -78.1756 [Ac=-43387.5 LM=0.0] (Act=16.9)
+Aligning File: res/wav/13516144_003.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+mari kita memulai materi fisika dengan bab pertama yaitu bab pengukuran  ==  [880 frames] -78.6928 [Ac=-69249.6 LM=0.0] (Act=23.8)
+Aligning File: res/wav/13516144_004.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+sains dan engineering didasarkan pada pengukuran dan perbandingan  ==  [1029 frames] -74.5353 [Ac=-76696.9 LM=0.0] (Act=30.8)
+Aligning File: res/wav/13516144_005.mfc
+Created lattice with 26 nodes / 25 arcs from label file
+oleh karena itu kita memerlukan aturan-aturan tentang bagaimana sesuatu itu diukur dan dibandingkan dan kita juga memerlukan eksperimen untuk menciptakan satuan dari pengukuran dan perbandingan tersebut  ==  [1721 frames] -79.6230 [Ac=-137031.1 LM=0.0] (Act=22.7)
+Aligning File: res/wav/13516144_006.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+No tokens survived to final node of network at beam 250.0
+salah satu tujuan dari fisika dan engineering adalah untuk merancang dan melaksanakan eksperimen tersebut  ==  [1113 frames] -77.9199 [Ac=-86724.9 LM=0.0] (Act=30.3)
+Aligning File: res/wav/13516144_007.mfc
+Created lattice with 25 nodes / 24 arcs from label file
+No tokens survived to final node of network at beam 250.0
+contohnya seorang ahli fisika berusaha untuk mengembangkan jam dengan akurasi yang tinggi sehingga waktu kapan pun atau interval waktu dapat ditentukan dan dibandingkan dengan tepat  ==  [1656 frames] -78.1965 [Ac=-129493.4 LM=0.0] (Act=30.6)
+Aligning File: res/wav/13516144_008.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+anda mungkin bertanya-tanya apakah akurasi benar-benar dibutuhkan atau sepadan dengan kerja keras yang dilakukan  ==  [1126 frames] -78.2948 [Ac=-88160.0 LM=0.0] (Act=18.6)
+Aligning File: res/wav/13516144_009.mfc
+Created lattice with 2 nodes / 1 arcs from label file
+ini contohnya  ==  [346 frames] -71.9306 [Ac=-24888.0 LM=0.0] (Act=12.4)
+Aligning File: res/wav/13516144_010.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+tanpa adanya jam dengan akurasi yang tinggi gps yang saat ini sangat vital untuk sistem navigasi dunia tidak akan berguna  ==  [1298 frames] -74.2252 [Ac=-96344.3 LM=0.0] (Act=19.9)
+Aligning File: res/wav/13516144_011.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+No tokens survived to final node of network at beam 250.0
+kita memperdalam ilmu fisika dengan mempelajari bagaimana mengukur besaran yang ada dalam fisika  ==  [1066 frames] -76.2353 [Ac=-81266.9 LM=0.0] (Act=37.3)
+Aligning File: res/wav/13516144_012.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+No tokens survived to final node of network at beam 250.0
+di antara besaran-besaran tersebut adalah panjang waktu massa suhu tekanan dan arus listrik  ==  [1192 frames] -75.9738 [Ac=-90560.8 LM=0.0] (Act=34.6)
+Aligning File: res/wav/13516144_013.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+kita mengukur setiap besaran fisik dalam satuannya masing-masing menggunakan perbandingan terhadap suatu standar  ==  [1192 frames] -78.0017 [Ac=-92978.0 LM=0.0] (Act=20.3)
+Aligning File: res/wav/13516144_014.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+satuan adalah nama unik yang kita tetapkan untuk mengukur besaran tersebut misalnya meter untuk besaran panjang  ==  [1414 frames] -75.3659 [Ac=-106567.4 LM=0.0] (Act=19.1)
+Aligning File: res/wav/13516144_015.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+sebuah nilai baku yang sesuai dengan satu satuan besaran  ==  [815 frames] -75.7622 [Ac=-61746.2 LM=0.0] (Act=20.2)
+Aligning File: res/wav/13516144_016.mfc
+Created lattice with 26 nodes / 25 arcs from label file
+seperti yang dapat anda lihat standar untuk panjang yang sesuai dengan tepat satu meter adalah jarak yang ditempuh cahaya dalam ruang hampa selama fraksi waktu tertentu  ==  [1609 frames] -78.5708 [Ac=-126420.4 LM=0.0] (Act=28.8)
+Aligning File: res/wav/13516144_017.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+kita dapat mendefinisikan satuan dan standarnya dengan cara apa pun yang kita inginkan  ==  [657 frames] -79.4177 [Ac=-52177.4 LM=0.0] (Act=21.6)
+Aligning File: res/wav/13516144_018.mfc
+Created lattice with 27 nodes / 26 arcs from label file
+namun yang terpenting adalah untuk melakukannya dengan suatu cara di mana para ilmuwan di seluruh dunia setuju bahwa definisi yang kita buat tersebut masuk akal dan praktis  ==  [1521 frames] -78.5039 [Ac=-119404.4 LM=0.0] (Act=25.0)
+Aligning File: res/wav/13516144_019.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+begitu kita telah menetapkan standar  ==  [374 frames] -79.0522 [Ac=-29565.5 LM=0.0] (Act=14.1)
+Aligning File: res/wav/13516144_020.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+misalnya untuk panjang  ==  [258 frames] -75.4859 [Ac=-19475.4 LM=0.0] (Act=12.7)
+Aligning File: res/wav/13516144_021.mfc
+Created lattice with 31 nodes / 30 arcs from label file
+kita harus menyusun prosedur di mana setiap besaran panjang apapun baik itu jari-jari atom hidrogen jarak roda skateboard atau jarak ke bintang atau jarak antar kota dapat dinyatakan dalam suatu standar  ==  [2130 frames] -77.1634 [Ac=-164358.0 LM=0.0] (Act=26.3)
+Aligning File: res/wav/13516144_022.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+penggaris ini contohnya yang digunakan untuk mengukur standar panjang memberikan kita salah satu prosedur dalam mengukur panjang  ==  [1038 frames] -78.2270 [Ac=-81199.7 LM=0.0] (Act=28.8)
+Aligning File: res/wav/13516144_023.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+meskipun demikian beberapa alat pembanding yang kita miliki harus digunakan dengan cara tidak langsung  ==  [778 frames] -78.2527 [Ac=-60880.6 LM=0.0] (Act=22.5)
+Aligning File: res/wav/13516144_024.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+sebagai contoh anda tidak dapat menggunakan penggaris untuk mengukur jari-jari atom atau jarak ke bintang  ==  [834 frames] -79.9404 [Ac=-66670.3 LM=0.0] (Act=23.3)
+Aligning File: res/wav/13516144_025.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+terdapat banyak sekali besaran fisika sehingga sulit untuk mengelompokkannya  ==  [801 frames] -74.9550 [Ac=-60039.0 LM=0.0] (Act=35.6)
+Aligning File: res/wav/13516144_026.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+untungnya tidak semua besaran berdiri sendiri  ==  [472 frames] -76.8195 [Ac=-36258.8 LM=0.0] (Act=16.2)
+Aligning File: res/wav/13516144_027.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+misalnya laju adalah rasio antara jarak dan waktu  ==  [579 frames] -79.4511 [Ac=-46002.2 LM=0.0] (Act=25.7)
+Aligning File: res/wav/13516144_028.mfc
+Created lattice with 27 nodes / 26 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+jadi yang kita lakukan adalah memilih dengan persetujuan internasional sejumlah kecil besaran fisika dalam contoh ini adalah panjang dan waktu kemudian menetapkan standar untuk masing-masing besaran tersebut  ==  [1674 frames] -78.8320 [Ac=-131964.8 LM=0.0] (Act=54.0)
+Aligning File: res/wav/13516144_029.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+No tokens survived to final node of network at beam 250.0
+kemudian kita mendefinisikan besaran fisika lainnya dalam besaran pokok tersebut dan menggunakan standar yang digunakannya atau yang kita sebut standar pokok  ==  [1410 frames] -78.9254 [Ac=-111284.8 LM=0.0] (Act=31.4)
+Aligning File: res/wav/13516144_030.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+sebagai contoh laju yang tadi didefinisikan dalam besaran pokok panjang dan waktu dan menggunakan standar pokok keduanya  ==  [1154 frames] -77.5436 [Ac=-89485.3 LM=0.0] (Act=21.2)
+Aligning File: res/wav/13516144_031.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+standar pokok harus dapat diperoleh dan seragam atau tetap  ==  [769 frames] -74.8183 [Ac=-57535.2 LM=0.0] (Act=17.5)
+Aligning File: res/wav/13516144_032.mfc
+Created lattice with 33 nodes / 32 arcs from label file
+No tokens survived to final node of network at beam 250.0
+bila kita mendefinisikan standar panjang sebagai jarak antara hidung seseorang dengan ujung jari telunjuk dari lengan yang diregangkan pastinya kita akan mendapat standar yang mudah diperoleh tetapi tentunya akan berbeda-beda untuk tiap orang  ==  [1665 frames] -80.7184 [Ac=-134396.2 LM=0.0] (Act=39.3)
+Aligning File: res/wav/13516144_033.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+kebutuhan akan ketelitian dalam sains dan engineering menuntut kita untuk mendahulukan keseragaman  ==  [815 frames] -79.8628 [Ac=-65088.2 LM=0.0] (Act=24.4)
+Aligning File: res/wav/13516144_034.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+setelah itu barulah kita berusaha semaksimal mungkin untuk membuat duplikat dari standar dasar yang dapat dicapai bagi yang membutuhkannya  ==  [1048 frames] -79.5034 [Ac=-83319.6 LM=0.0] (Act=21.4)
+Aligning File: res/wav/13516144_035.mfc
+Created lattice with 44 nodes / 43 arcs from label file
+oleh karena itu di tahun sembilan belas tujuh satu general conference on weights and measures ke empat belas memilih tujuh besaran sebagai besaran pokok dan menjadi dasar terbentuknya satuan sistem internasional yang sering kita sebut sebagai satuan SI dan dikenal dengan sebutan sistem metrik  ==  [3123 frames] -75.8600 [Ac=-236910.8 LM=0.0] (Act=29.2)
+Aligning File: res/wav/13516144_036.mfc
+Created lattice with 39 nodes / 38 arcs from label file
+untuk satuan pokok ini ada waktu dengan detik atau sekon ada panjang dengan satuannya meter massa dengan satuannya kilogram arus listrik dengan satuannya ampere suhu dengan satuannya kelvin jumlah zat dengan satuannya mol dan intensitas cahaya dengan satuannya candela  ==  [2817 frames] -78.2240 [Ac=-220357.0 LM=0.0] (Act=28.5)
+Aligning File: res/wav/13516144_037.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+banyak satuan turunan standar internasional yang didefinisikan dari satuan pokok ini  ==  [1391 frames] -73.8238 [Ac=-102688.9 LM=0.0] (Act=28.1)
+Aligning File: res/wav/13516144_038.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+misalnya satuan SI untuk daya yaitu watt didefinisikan dalam satuan pokok untuk massa panjang dan waktu  ==  [1326 frames] -78.5158 [Ac=-104112.0 LM=0.0] (Act=29.4)
+Aligning File: res/wav/13516144_039.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+karena satu watt sama dengan satu kilogram kali meter persegi bagi detik pangkat tiga  ==  [1442 frames] -76.2025 [Ac=-109884.0 LM=0.0] (Act=24.9)
+Aligning File: res/wav/13516144_040.mfc
+Created lattice with 25 nodes / 24 arcs from label file
+untuk menyatakan besaran yang sangat besar dan besaran yang sangat kecil yang biasa kita temui dalam fisika digunakan notasi ilmiah yang menggunakan pangkat dari sepuluh  ==  [1688 frames] -77.0454 [Ac=-130052.6 LM=0.0] (Act=25.0)
+Aligning File: res/wav/13516144_041.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+misalnya tiga puluh lima juta bisa kita tuliskan dengan tiga koma lima kali sepuluh pangkat tujuh  ==  [1424 frames] -74.7055 [Ac=-106380.7 LM=0.0] (Act=30.3)
+Aligning File: res/wav/13516144_042.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+notasi ilmiah pada komputer kadang bahkan menggunakan pernyataan yang lebih singkat  ==  [871 frames] -76.3712 [Ac=-66519.3 LM=0.0] (Act=20.0)
+Aligning File: res/wav/13516144_043.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+misalnya kalau kasus tadi tiga puluh lima juta dituliskan tiga koma lima e tujuh dimana e adalah eksponen dari sepuluh  ==  [1359 frames] -77.8728 [Ac=-105829.1 LM=0.0] (Act=24.0)
+Aligning File: res/wav/13516144_044.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+dan bahkan dibeberapa kalkulator e hanya diganti sebagai spasi kosong  ==  [969 frames] -74.4277 [Ac=-72120.4 LM=0.0] (Act=16.6)
+Aligning File: res/wav/13516144_045.mfc
+Created lattice with 25 nodes / 24 arcs from label file
+untuk kenyamanan lebih lanjut ketika berhadapan dengan ukuran yang sangat besar atau sangat kecil kita gunakan awalan awalan seperti yang saya akan sebutkan seperti berikut  ==  [1535 frames] -80.2434 [Ac=-123173.5 LM=0.0] (Act=22.6)
+Aligning File: res/wav/13516144_046.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+giga yaitu sepuluh pangkat sembilan  ==  [230 frames] -83.4106 [Ac=-19184.4 LM=0.0] (Act=23.5)
+Aligning File: res/wav/13516144_047.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+mega yaitu sepuluh pangkat enam  ==  [179 frames] -81.7860 [Ac=-14639.7 LM=0.0] (Act=22.4)
+Aligning File: res/wav/13516144_048.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+kilo yaitu sepuluh pangkat tiga  ==  [188 frames] -84.4518 [Ac=-15876.9 LM=0.0] (Act=23.2)
+Aligning File: res/wav/13516144_049.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+centi sepuluh pangkat minus dua  ==  [244 frames] -81.4905 [Ac=-19883.7 LM=0.0] (Act=21.1)
+Aligning File: res/wav/13516144_050.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+mili sepuluh pangkat minus dua  ==  [165 frames] -85.5503 [Ac=-14115.8 LM=0.0] (Act=20.9)
+Aligning File: res/wav/13516144_051.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+mikro sepuluh pangkat minus enam  ==  [188 frames] -82.6995 [Ac=-15547.5 LM=0.0] (Act=18.7)
+Aligning File: res/wav/13516144_052.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+nano sepuluh pangkat minus sembilan  ==  [161 frames] -82.2237 [Ac=-13238.0 LM=0.0] (Act=21.2)
+Aligning File: res/wav/13516144_053.mfc
+Created lattice with 6 nodes / 5 arcs from label file
+pico sepuluh pangkat minus dua belas  ==  [147 frames] -87.6455 [Ac=-12883.9 LM=0.0] (Act=24.2)
+Aligning File: res/wav/13516144_054.mfc
+Created lattice with 4 nodes / 3 arcs from label file
+berikut yang sering digunakan  ==  [125 frames] -86.2604 [Ac=-10782.5 LM=0.0] (Act=18.1)
+Aligning File: res/wav/13516144_055.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+menempelkan awalan tersebut pada satuan SI memberikan efek mengalikan dengan faktor yang terkait  ==  [899 frames] -79.5385 [Ac=-71505.1 LM=0.0] (Act=24.8)
+Aligning File: res/wav/13516144_056.mfc
+Created lattice with 26 nodes / 25 arcs from label file
+No tokens survived to final node of network at beam 250.0
+No tokens survived to final node of network at beam 400.0
+contohnya tadi tiga puluh lima juta asumsikan kita berikan satuan watt jadi tiga puluh lima juta watt kita bisa sebutkan dengan tiga puluh lima mega watt  ==  [1132 frames] -80.4123 [Ac=-91026.7 LM=0.0] (Act=74.2)
+Aligning File: res/wav/13516144_057.mfc
+Created lattice with 5 nodes / 4 arcs from label file
+untuk sesi kuliah pertama dicukupkan  ==  [305 frames] -81.6837 [Ac=-24913.5 LM=0.0] (Act=14.5)
+Aligning File: res/wav/13516144_058.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+tugas sesi ini adalah mencari dan menuliskan satuan turunan SI  ==  [798 frames] -78.4662 [Ac=-62616.0 LM=0.0] (Act=22.8)
+Aligning File: res/wav/13516144_059.mfc
+Created lattice with 3 nodes / 2 arcs from label file
+demikian terima kasih  ==  [156 frames] -84.4170 [Ac=-13169.1 LM=0.0] (Act=24.1)
+Aligning File: res/wav/13516144_060.mfc
+Created lattice with 2 nodes / 1 arcs from label file
+selamat pagi  ==  [96 frames] -83.9311 [Ac=-8057.4 LM=0.0] (Act=11.9)
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+                  NUMCEPS                       12
+                  CEPLIFTER                     22
+                  NUMCHANS                      26
+                  PREEMCOEF               0.970000
+                  USEHAMMING                  TRUE
+                  WINDOWSIZE         250000.000000
+                  SAVEWITHCRC                 TRUE
+                  SAVECOMPRESSED              TRUE
+                  TARGETRATE         100000.000000
+                  TARGETKIND            MFCC_0_D_A
+

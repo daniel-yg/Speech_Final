@@ -4,5 +4,6 @@ pwd = "res/wav"
 
 filelist = [f for f in listdir(pwd) if isfile(join(pwd, f))]
 for f in filelist:
-    f = f.split(".")[0]
-    print(f"{pwd}/{f}.mfc")
+    f = f.split(".")
+    if (f[1] == "wav"):
+        print(f"{pwd}/{f[0]}.mfc")
